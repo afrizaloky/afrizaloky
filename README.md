@@ -43,15 +43,10 @@ To connect with me,
   </p>
 </p>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 <p>
   <img align="left" height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html&show_icons=true&title_color=f69673&icon_color=1b93c9&show_owner=true"/>
   <p>
-    <img src="https://ghiscure.vercel.app/api/now-playing" width="265" height="200" alt="Now Playing">
+    <img src="https://ghiscure.vercel.app/api/now-playing" align="right" width="265" height="200" alt="Now Playing">
   </p>
 </p>
