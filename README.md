@@ -41,5 +41,5 @@ My Github Stats:
 </p>
 
 <a href="https://ghiscure.vercel.app/api/now-playing">
-    <img src="https://ghiscure.vercel.app/api/now-playing" align="right" width="265" height="200" alt="Now Playing">
+    <img src="https://ghiscure.vercel.app/api/now-playing" align="centre" width="265" height="200" alt="Now Playing">
 </a>
