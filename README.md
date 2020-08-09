@@ -19,14 +19,6 @@ To connect with me,
 </p>
 
 ---
-My Github Stats: 
-
-<br>
-
-<p align = "center">
-  <img src = "https://github-readme-stats.vercel.app/api?username=afrizaloky&show_icons=true&theme=radical&line_height=27">
-  <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html&theme=tokyonight">
-</p>
 
 My Tech Stack :<p align = "center">
   <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/> 
@@ -42,3 +34,12 @@ My Tech Stack :<p align = "center">
 <a href="https://ghiscure.vercel.app/api/now-playing">
     <img src="https://ghiscure.vercel.app/api/now-playing" align="right" width="265" height="200" alt="Now Playing">
 </a>
+
+My Github Stats: 
+
+<br>
+
+
+  <img src = "https://github-readme-stats.vercel.app/api?username=afrizaloky&show_icons=true&theme=radical&line_height=27">
+  <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html&theme=tokyonight">
+
