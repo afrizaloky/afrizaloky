@@ -44,7 +44,7 @@ To connect with me,
     <img src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/> 
   </p>
 </p>
-
+<br>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html"/> 
 <a href="https://ghiscure.vercel.app/api/now-playing">
     <img src="https://ghiscure.vercel.app/api/now-playing" align="right" width="265" height="200" alt="Now Playing">
