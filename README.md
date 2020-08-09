@@ -45,13 +45,7 @@ To connect with me,
   </p>
 </p>
 
-<br>
-<br>
-
-
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html"/> 
-
-
 <a href="https://ghiscure.vercel.app/api/now-playing">
     <img src="https://ghiscure.vercel.app/api/now-playing" align="right" width="265" height="200" alt="Now Playing">
 </a>
