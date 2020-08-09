@@ -42,6 +42,13 @@ To connect with me,
     <img src="https://img.shields.io/badge/-heroku-%23430098?&style=flat-square&logo=heroku&logoColor=white"/> 
   </p>
 </p>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <p>
   <img align="left" height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html&show_icons=true&title_color=f69673&icon_color=1b93c9&show_owner=true"/>
   <p>
