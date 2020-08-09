@@ -50,4 +50,5 @@ To connect with me,
     <img src="https://ghiscure.vercel.app/api/now-playing" align="right" width="265" height="200" alt="Now Playing">
 </a>
 
-[![afrizaloky's github stats](https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html)](https://github.com/afrizaloky)
+<img align="left" width="490" height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html"/>
+
