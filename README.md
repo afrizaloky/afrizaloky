@@ -34,18 +34,19 @@ To connect with me,
     <img src="https://img.shields.io/badge/-Laravel-F55247?style=flat-square&logo=Laravel&logoColor=white"/>
     <img src="https://img.shields.io/badge/-Debian-A80030?style=flat-square&logo=Debian&logoColor=white"/>
     <img src="https://img.shields.io/badge/-Google%20Cloud-4285F4?style=flat-square&logo=Google%20Cloud&logoColor=white"/>
-    <img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/> 
-    <img src="https://img.shields.io/badge/c++%20-%2300599C.svg?&style=for-the-badge&logo=c%2B%2B&ogoColor=white"/> 
-    <img src="https://img.shields.io/badge/flask%20-%23000.svg?&style=for-the-badge&logo=flask&logoColor=white"/> 
-    <img src="https://img.shields.io/badge/git%20-%23F05033.svg?&style=for-the-badge&logo=git&logoColor=white"/> 
-    <img src="https://img.shields.io/badge/AWS%20-%23FF9900.svg?&style=for-the-badge&logo=amazon-aws&logoColor=white"/> 
-    <img src="https://img.shields.io/badge/heroku%20-%23430098.svg?&style=for-the-badge&logo=heroku&logoColor=white"/> 
+    <img src="https://img.shields.io/badge/python%20-%2314354C?&style=for-the-badge&logo=python&logoColor=white"/> 
+    <img src="https://img.shields.io/badge/c++%20-%2300599C?&style=for-the-badge&logo=c%2B%2B&ogoColor=white"/> 
+    <img src="https://img.shields.io/badge/flask%20-%23000?&style=for-the-badge&logo=flask&logoColor=white"/> 
+    <img src="https://img.shields.io/badge/git%20-%23F05033?&style=for-the-badge&logo=git&logoColor=white"/> 
+    <img src="https://img.shields.io/badge/AWS%20-%23FF9900?&style=for-the-badge&logo=amazon-aws&logoColor=white"/> 
+    <img src="https://img.shields.io/badge/heroku%20-%23430098?&style=for-the-badge&logo=heroku&logoColor=white"/> 
   </p>
 </p>
 
 <br>
 <br>
-<br>
+
+
 <p>
   <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html&show_icons=true&title_color=f69673&icon_color=1b93c9&show_owner=true"/>
 
