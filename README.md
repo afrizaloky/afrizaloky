@@ -31,12 +31,8 @@ My Tech Stack :<p align = "center">
   <img src="https://img.shields.io/badge/php%20-%23430098.svg?&style=for-the-badge&logo=php&logoColor=white"/> 
 </p>
 
-<a href="https://ghiscure.vercel.app/api/now-playing">
-    <img src="https://ghiscure.vercel.app/api/now-playing" align="right" width="265" height="200" alt="Now Playing">
-</a>
 
 My Github Stats: 
-
 <br>
 
 <p align = "left">
@@ -44,3 +40,6 @@ My Github Stats:
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html"/> 
 </p>
 
+<a href="https://ghiscure.vercel.app/api/now-playing">
+    <img src="https://ghiscure.vercel.app/api/now-playing" align="right" width="265" height="200" alt="Now Playing">
+</a>
