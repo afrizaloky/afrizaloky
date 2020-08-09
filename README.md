@@ -34,12 +34,12 @@ To connect with me,
     <img src="https://img.shields.io/badge/-Laravel-F55247?style=flat-square&logo=Laravel&logoColor=white"/>
     <img src="https://img.shields.io/badge/-Debian-A80030?style=flat-square&logo=Debian&logoColor=white"/>
     <img src="https://img.shields.io/badge/-Google%20Cloud-4285F4?style=flat-square&logo=Google%20Cloud&logoColor=white"/>
-    <img src="https://img.shields.io/badge/-python%20-%2314354C?&style=for-the-badge&logo=python&logoColor=white"/> 
-    <img src="https://img.shields.io/badge/-c++%20-%2300599C?&style=for-the-badge&logo=c%2B%2B&ogoColor=white"/> 
-    <img src="https://img.shields.io/badge/-flask%20-%23000?&style=for-the-badge&logo=flask&logoColor=white"/> 
-    <img src="https://img.shields.io/badge/-git%20-%23F05033?&style=for-the-badge&logo=git&logoColor=white"/> 
-    <img src="https://img.shields.io/badge/-AWS%20-%23FF9900?&style=for-the-badge&logo=amazon-aws&logoColor=white"/> 
-    <img src="https://img.shields.io/badge/-heroku%20-%23430098?&style=for-the-badge&logo=heroku&logoColor=white"/> 
+    <img src="https://img.shields.io/badge/-python-%2314354C?&style=for-the-badge&logo=python&logoColor=white"/> 
+    <img src="https://img.shields.io/badge/-c++-%2300599C?&style=for-the-badge&logo=c%2B%2B&ogoColor=white"/> 
+    <img src="https://img.shields.io/badge/-flask-%23000?&style=for-the-badge&logo=flask&logoColor=white"/> 
+    <img src="https://img.shields.io/badge/-git-%23F05033?&style=for-the-badge&logo=git&logoColor=white"/> 
+    <img src="https://img.shields.io/badge/-AWS-%23FF9900?&style=for-the-badge&logo=amazon-aws&logoColor=white"/> 
+    <img src="https://img.shields.io/badge/-heroku-%23430098?&style=for-the-badge&logo=heroku&logoColor=white"/> 
   </p>
 </p>
 
@@ -48,7 +48,7 @@ To connect with me,
 
 
 <p>
-  <img align="left" width="490" height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html&show_icons=true&title_color=f69673&icon_color=1b93c9&show_owner=true"/>
+  <img align="left" height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html&show_icons=true&title_color=f69673&icon_color=1b93c9&show_owner=true"/>
 
   <p>
   <a href="https://ghiscure.vercel.app/api/now-playing">
