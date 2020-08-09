@@ -39,7 +39,8 @@ My Github Stats:
 
 <br>
 
-
+<p align = "left">
   ![github stats](https://github-readme-stats.vercel.app/api?username=afrizaloky&show_icons=true)
   ![github stats](https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html)
+</p>
 
