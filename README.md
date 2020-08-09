@@ -44,7 +44,8 @@ To connect with me,
 </p>
 
 <br>
-
+<br>
+<br>
 <p>
   <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html&show_icons=true&title_color=f69673&icon_color=1b93c9&show_owner=true"/>
 
