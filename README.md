@@ -1,12 +1,12 @@
 ## Hi 👋 I am Afrizal!
 
-- 🤝 Open for collaborations in deep learning, analytics and data science.
+- 🔭 I’m currently working on ghiscure
 - 😊 Willing to contribute in opensource projects.
 
 To connect with me,
 
 <div align = "center">
-
+[<img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" />](https://twitter.com/afrizaloky) 
 [<img src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=white" />](https://medium.com/@afrizaloky)
 [<img src ="https://img.shields.io/badge/portfolio-web-%23.svg?&style=for-the-badge&logo=&logoColor=white%22">](https://afrizaloky.github.io/)
 [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/afrizaloky/)
@@ -48,6 +48,10 @@ To connect with me,
   <br>
   <br>
   <br>
+  <div>
+   <img src="https://komarev.com/ghpvc/?username=afrizaloky">
+  </div>
+  
 </div>
 
 ---
@@ -57,3 +61,14 @@ To connect with me,
 <a href="https://ghiscure.vercel.app/api/now-playing">
     <img src="https://ghiscure.vercel.app/api/now-playing" width="256" height="64" alt="Now Playing">
 </a>
+
+<!--
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
