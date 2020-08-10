@@ -47,7 +47,7 @@ To connect with me,
 <br/>
 <br/>
 <div>
-  <img height="100"gn=165  src="https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html&show_icons=true&title_color=f69673&icon_color=1b93c9&show_owner=true"/>
+  <img height="100" src="https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html&show_icons=true&title_color=f69673&icon_color=1b93c9&show_owner=true"/>
   <br>
   <br>
   <br>
@@ -57,6 +57,7 @@ To connect with me,
 ---
 
 **Now Playing** on Spotify
+<br>
 <a href="https://ghiscure.vercel.app/api/now-playing">
     <img src="https://ghiscure.vercel.app/api/now-playing" width="256" height="64" alt="Now Playing">
 </a>
