@@ -51,8 +51,7 @@ To connect with me,
   <div>
   </div>
 </div>
+
 ---
-<div>
 **Now Playing** on Spotify
    <img src="https://ghiscure.vercel.app/api/now-playing" width="265" height="64" alt="Now Playing">
-</div>
