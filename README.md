@@ -6,7 +6,7 @@
 
 To connect with me,
 
-<p align = "center">
+<div align = "center">
 
 [<img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" />](https://twitter.com/afrizaloky) 
 [<img src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=white" />](https://medium.com/@afrizaloky)
@@ -16,13 +16,13 @@ To connect with me,
 [<img src = "https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white">](https://www.instagram.com/afrizaloky/)
 ![Visits Badge](https://badges.pufler.dev/visits/afrizaloky/afrizaloky?style=for-the-badge ) 
 
-</p>
+</div>
 
 ---
 
-<p>
+<div>
   <img align="left" width="490" height="165" src="https://github-readme-stats.vercel.app/api?username=afrizaloky&show_icons=true&hide_border=false&line_height=20&title_color=f69673&icon_color=1b93c9&show_owner=true"/>
-  <p>
+  <div>
     <img src="https://img.shields.io/badge/-Visual%20Studio%20Code-23A9F2?style=flat-square&logo=Visual%20Studio%20Code&logoColor=white"/>
     <img src="https://img.shields.io/badge/-Github-181717?style=flat-square&logo=GitHub&logoColor=white"/>
     <img src="https://img.shields.io/badge/-Git-F44D27?style=flat-square&logo=Git&logoColor=white"/>
@@ -40,15 +40,15 @@ To connect with me,
     <img src="https://img.shields.io/badge/-git-%23F05033?&style=flat-square&logo=git&logoColor=white"/> 
     <img src="https://img.shields.io/badge/-AWS-%23FF9900?&style=flat-square&logo=amazon-aws&logoColor=white"/> 
     <img src="https://img.shields.io/badge/-heroku-%23430098?&style=flat-square&logo=heroku&logoColor=white"/> 
-  </p>
-</p>
+  </div>
+</div>
 <br/>
 <br/>
 <br/>
 <br/>
-<p>
+<div>
   <img align="left" height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html&show_icons=true&title_color=f69673&icon_color=1b93c9&show_owner=true"/>
-  <p>
+  <div>
     <img src="https://ghiscure.vercel.app/api/now-playing" align="right" width="265" height="64" alt="Now Playing">
-  </p>
-</p>
+  </div>
+</div>
