@@ -49,6 +49,10 @@ To connect with me,
 <div>
   <img align="left" height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html&show_icons=true&title_color=f69673&icon_color=1b93c9&show_owner=true"/>
   <div>
-    <img src="https://ghiscure.vercel.app/api/now-playing" align="right" width="265" height="64" alt="Now Playing">
   </div>
+</div>
+---
+<div>
+**Now Playing** on Spotify
+   <img src="https://ghiscure.vercel.app/api/now-playing" width="265" height="64" alt="Now Playing">
 </div>
