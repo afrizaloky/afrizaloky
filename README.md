@@ -47,7 +47,10 @@ To connect with me,
 <br/>
 <br/>
 <div>
-  <img align="left" height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html&show_icons=true&title_color=f69673&icon_color=1b93c9&show_owner=true"/>
+  <img align="left"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=afrizaloky&hide=css,html&show_icons=true&title_color=f69673&icon_color=1b93c9&show_owner=true"/>
+  <br>
+  <br>
+  <br>
   <br>
 </div>
 
