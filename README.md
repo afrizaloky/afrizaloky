@@ -20,21 +20,13 @@ To connect with me,
 <div>
   <img align="left" width="490" height="165" src="https://github-readme-stats.vercel.app/api?username=afrizaloky&show_icons=true&hide_border=false&line_height=20&title_color=f69673&icon_color=1b93c9&show_owner=true"/>
   <div>
-    <img src="https://img.shields.io/badge/-Visual%20Studio%20Code-23A9F2?style=flat-square&logo=Visual%20Studio%20Code&logoColor=white"/>
     <img src="https://img.shields.io/badge/-Github-181717?style=flat-square&logo=GitHub&logoColor=white"/>
     <img src="https://img.shields.io/badge/-Git-F44D27?style=flat-square&logo=Git&logoColor=white"/>
-    <img src="https://img.shields.io/badge/-NPM-CB3837?style=flat-square&logo=NPM&logoColor=white"/>
-    <img src="https://img.shields.io/badge/-Apache-D22128?style=flat-square&logo=Apache&logoColor=white"/>
-    <img src="https://img.shields.io/badge/-Trello-0079BF?style=flat-square&logo=Trello&logoColor=white"/>
-    <img src="https://img.shields.io/badge/-Slack-E01563?style=flat-square&logo=Slack&logoColor=white"/>
-    <img src="https://img.shields.io/badge/-MySQL-F29111?style=flat-square&logo=MySQL&logoColor=white"/>
-    <img src="https://img.shields.io/badge/-Laravel-F55247?style=flat-square&logo=Laravel&logoColor=white"/>
+    <img src="https://img.shields.io/badge/-Apache-D22128?style=flat-square&logo=Apache&logoColor=white"/>/>
     <img src="https://img.shields.io/badge/-Debian-A80030?style=flat-square&logo=Debian&logoColor=white"/>
     <img src="https://img.shields.io/badge/-Google%20Cloud-4285F4?style=flat-square&logo=Google%20Cloud&logoColor=white"/>
     <img src="https://img.shields.io/badge/-python-%2314354C?&style=flat-square&logo=python&logoColor=white"/> 
     <img src="https://img.shields.io/badge/-c++-%2300599C?&style=flat-square&logo=c%2B%2B&ogoColor=white"/> 
-    <img src="https://img.shields.io/badge/-flask-%23000?&style=flat-square&logo=flask&logoColor=white"/> 
-    <img src="https://img.shields.io/badge/-git-%23F05033?&style=flat-square&logo=git&logoColor=white"/> 
     <img src="https://img.shields.io/badge/-AWS-%23FF9900?&style=flat-square&logo=amazon-aws&logoColor=white"/> 
     <img src="https://img.shields.io/badge/-heroku-%23430098?&style=flat-square&logo=heroku&logoColor=white"/> 
   </div>
