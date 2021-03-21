@@ -26,6 +26,7 @@ jobs:
         with:
           filename: metrics.classic.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: header, repositories
           plugin_lines: yes
           plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
@@ -39,7 +40,7 @@ jobs:
         with:
           template: repository
           filename: metrics.repository.svg
-          token: ${{ secrets.METRICS_BOT_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           user: afrizaloky
           repo: afrizaloky
           plugin_lines: yes
@@ -308,7 +309,7 @@ jobs:
         uses: lowlighter/metrics@master
         with:
           filename: metrics.plugin.introduction.svg
-          token: ${{ secrets.METRICS_BOT_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           user: github
           base: header
           plugin_introduction: yes
@@ -668,7 +669,7 @@ jobs:
         uses: lowlighter/metrics@master
         with:
           filename: metrics.plugin.projects.svg
-          token: ${{ secrets.METRICS_BOT_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_projects: yes
           plugin_projects_repositories: lowlighter/metrics/projects/1
@@ -783,7 +784,7 @@ jobs:
         uses: lowlighter/metrics@master
         with:
           filename: metrics.plugin.traffic.svg
-          token: ${{ secrets.METRICS_BOT_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           base: repositories
           plugin_traffic: yes
           plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
@@ -862,7 +863,7 @@ jobs:
         with:
           filename: metrics.organization.svg
           user: github
-          token: ${{ secrets.METRICS_BOT_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           base: header, repositories
           output_action: pull-request
 
@@ -875,7 +876,7 @@ jobs:
         uses: lowlighter/metrics@master
         with:
           filename: metrics.header.svg
-          token: ${{ secrets.METRICS_BOT_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           base: header
           debug_flags: --cakeday --hireable --halloween
           output_action: pull-request-squash
@@ -888,7 +889,7 @@ jobs:
         uses: lowlighter/metrics@master
         continue-on-error: true
         with:
-          token: ${{ secrets.METRICS_BOT_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           retries: 3
           retries_delay: 0
           debug_flags: --error
