@@ -861,25 +861,31 @@
     font-size: 14px;
     color: #58A6FF;
   }
+  .achievement .gauge.info {
+    color: #58A6FF;
+  }
   .achievement.x .title {
     color: #666666;
   }
-  .achievement.x .icon {
-    filter: grayscale(1) opacity(.5);
+  .achievement.x .gauge.info {
+    color: #B0B0B0;
   }
   .achievement.b .title {
     color: #9D8FFF;
   }
-  .achievement.b .icon {
-    filter: hue-rotate(35deg);
+  .achievement.b .gauge.info {
+    color: #9E91FF;
   }
   .achievement.a .title {
     color: #D79533;
   }
-  .achievement.a .icon {
-    filter: sepia() saturate(2);
+  .achievement.a .gauge.info {
+    color: #E7BD69;
   }
   .achievement.s .title {
+    color: #FF0000;
+  }
+  .achievement.s .gauge.info {
     color: #FF0000;
   }
   .achievement.s .icon {
@@ -888,8 +894,8 @@
   .achievement.secret .title{
     color: #FF76CD;
   }
-  .achievement.secret .icon {
-    filter: hue-rotate(100deg);
+  .achievement.secret .gauge.info {
+    color: #FF79D1;
   }
   .achievement .gh {
     border: 1px solid currentColor;
@@ -899,6 +905,18 @@
   }
   .achievement .gauge-base, .achievement .gauge-arc {
     stroke-width: 6;
+  }
+
+/* RSS feed */
+  .rss {
+    align-items: flex-start;
+  }
+  .rss .infos {
+    margin-bottom: 3px;
+  }
+  .rss .infos .date {
+    font-size: 10px;
+    color: #666666;
   }
 
 /* Fade animation */
@@ -1013,6 +1031,8 @@
         
       
         
+      
+        
   <section>
     <h2 class="field">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"/></svg>
@@ -1036,7 +1056,7 @@
           </div>
           <div class="field">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M1.5 1.75a.75.75 0 00-1.5 0v12.5c0 .414.336.75.75.75h14.5a.75.75 0 000-1.5H1.5V1.75zm14.28 2.53a.75.75 0 00-1.06-1.06L10 7.94 7.53 5.47a.75.75 0 00-1.06 0L3.22 8.72a.75.75 0 001.06 1.06L7 7.06l2.47 2.47a.75.75 0 001.06 0l5.25-5.25z"/></svg>
-            ~1.73 commits per day
+            ~1.74 commits per day
           </div>
         </section>
       
@@ -2876,10 +2896,10 @@
                       <path fill="#9be9a8" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,2.1363636363636362 0,1.1363636363636362 z"/>
                       <path fill="#9be9a8" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,1.1363636363636362 1.7,2.1363636363636362 z"/>
                     </g></g><g transform="translate(88.39999999999999, 52)">
-                    <g transform="translate(0, 1.2272727272727275)">
+                    <g transform="translate(0, 0.5454545454545456)">
                       <path fill="#216e39" d="M1.7,2 0,1 1.7,0 3.4,1 z"/>
-                      <path fill="#216e39" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,6.7727272727272725 0,5.7727272727272725 z"/>
-                      <path fill="#216e39" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,5.7727272727272725 1.7,6.7727272727272725 z"/>
+                      <path fill="#216e39" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,7.454545454545454 0,6.454545454545454 z"/>
+                      <path fill="#216e39" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,6.454545454545454 1.7,7.454545454545454 z"/>
                     </g></g></g></svg>
     
   </section>
