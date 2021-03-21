@@ -1,36 +1,12 @@
-# This is a workflow which display most of lowlighter/metrics features
-#
-# It is also used to detect broken plugins, so that's why "plugins_errors_fatal" is enabled on most of them,
-# but you should set it to no if you're copying steps from this workflow
-#
-# ⚠️ Following jobs all uses @master branch (unstable branch with unreleased features)
-
 name: Metrics
 on:
-  schedule:
-    - cron: "0 2-23/4 * * *"
+  # Schedule updates (each hour)
+  schedule: [{ cron: "0 0 * * 0" }]
+  # Lines below let you run workflow manually and on each commit (optional)
+  push: { branches: ["master", "main"] }
   workflow_dispatch:
 jobs:
   github-metrics:
-    runs-on: ubuntu-latest
-    steps:
-      # ======================================================================================
-      # 🖼️ TEMPLATES
-      # ======================================================================================
-      # See https://github.com/lowlighter/metrics for documentation
-# This worflow is scheduled for every hour, and also run after each commit (GitHub action excluded) on master/main branch
-
-name: Metrics
-on:
-  schedule:
-    - cron: "0 0-23/4 * * *"
-  push:
-    branches:
-      - master
-      - main
-  workflow_dispatch:
-jobs:
-  github-metrics-personal:
     runs-on: ubuntu-latest
     steps:
       # See action.yml for all options
@@ -40,883 +16,139 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           # GITHUB_TOKEN is a special auto-generated token restricted to current repository, which is used to push files in it
           committer_token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Personal metrics
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          base: header
-          plugin_isocalendar: yes
-          plugin_languages: yes
-          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, vue, scala, c
-          plugin_languages_skipped: lowlighter
-          plugin_languages_details: bytes-size, percentage
-          plugin_topics: yes
-          plugin_topics_limit: 0
-          plugin_topics_mode: mastered
-          config_order: base.header, isocalendar, languages, topics
 
-      # Classic template example
-      - name: 📗 Classic template
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.classic.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          base: header, repositories
-          plugin_lines: yes
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # Repository template example, with some plugins enabled
-      # Notice how repository name is passed through "query" option
-
-      # Terminal template example
-      - name: 📙 Terminal template
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          template: terminal
-          filename: metrics.terminal.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: header, metadata
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # 🧩 PLUGINS
-      # ======================================================================================
-
-      # ======================================================================================
-      # 🏆 Achievements
-
-      # Achievements
-      - name: 🏆 Achievements
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.achievements.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_achievements: yes
-          plugin_achievements_only: polyglot, stargazer, developer, contributor, octonaut
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # 📰 Recent activity
-
-      # Display recent activity
       - name: 📰 Activity plugin
-        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@master
         with:
           filename: metrics.plugin.activity.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
           plugin_activity: yes
           plugin_activity_limit: 7
           plugin_activity_days: 0
-          plugin_activity_filter: issue, pr, release, fork, review, ref/create
+          plugin_activity_filter: issue, pr, release, fork, star
           plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
+          config_padding: 7%, 20%
 
-      # ======================================================================================
-      # 🌸 Anilist
-
-      # Anilist with onlyt favorites and currently watching anime sections
-      - name: 🌸 Anilist plugin (favorites and currently watching)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.anilist.svg
-          token: NOT_NEEDED
-          plugin_anilist: yes
-          plugin_anilist_medias: anime
-          plugin_anilist_sections: favorites, watching
-          plugin_anilist_limit: 1
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # Anilist with only favorites and currently reading manga sections
-      - name: 🌸 Anilist plugin (favorites and currently reading)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.anilist.manga.svg
-          token: NOT_NEEDED
-          plugin_anilist: yes
-          plugin_anilist_medias: manga
-          plugin_anilist_sections: favorites, reading
-          plugin_anilist_limit: 1
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # Anilist with only favorites characters section
-      - name: 🌸 Anilist plugin (favorites characters)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.anilist.characters.svg
-          token: NOT_NEEDED
-          plugin_anilist: yes
-          plugin_anilist_sections: characters
-          plugin_anilist_limit_characters: 22
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # Anilist plugin with all sections
-      - name: 🌸 Anilist plugin (complete)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.anilist.full.svg
-          token: NOT_NEEDED
-          plugin_anilist: yes
-          plugin_anilist_medias: anime, manga
-          plugin_anilist_sections: favorites, watching, reading, characters
-          plugin_anilist_limit: 1
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # 🏅 Contributors
-
-      - name: 🏅 Contributors plugin
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.contributors.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          template: repository
-          repo: metrics
-          plugin_contributors: yes
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      - name: 🏅 Contributors plugin (with contributions)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.contributors.contributions.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          template: repository
-          repo: metrics
-          plugin_contributors: yes
-          plugin_contributors_contributions: yes
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      - name: 🏅 Contributors plugin (release note)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.contributors.png
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          template: repository
-          repo: metrics
-          config_output: png
-          plugin_contributors: yes
-          plugin_contributors_head: master
-          plugin_contributors_base: latest
-          plugin_contributors_contributions: yes
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # 🎟️ Follow-up of issues and pull requests
-
-      # Display ratio of open/closed/merged issues and pull requests
       - name: 🎟️ Follow-up plugin
-        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@master
         with:
           filename: metrics.plugin.followup.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
           plugin_followup: yes
           plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
 
-      # ======================================================================================
-      # 🎫 Gists
-
-      # Display gists metrics
-      - name: 🎫 Gists plugin
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.gists.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_gists: yes
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # 🌇 GitHub Skyline 3D calendar
-
-      # GitHub skyline commits calendar
-      - name: 🌇 GitHub Skyline 3D calendar
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.skyline.svg
-          token: NOT_NEEDED
-          plugin_skyline: yes
-          plugin_skyline_year: 2020
-          plugin_skyline_frames: 6
-          plugin_skyline_quality: 1
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # 💡 Coding habits
-
-      # Display coding habits and recent activity (setup timezone for accurate metrics)
       - name: 💡 Habits plugin
-        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@master
         with:
           filename: metrics.plugin.habits.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
           plugin_habits: yes
           plugin_habits_facts: yes
           plugin_habits_charts: yes
           plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          config_timezone: Europe/Paris
-          output_action: pull-request
+          config_timezone: Asia/Colombo
 
-      # Display coding habits and recent activity, only facts section (setup timezone for accurate metrics)
-      - name: 💡 Habits plugin (facts)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.habits.facts.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_habits: yes
-          plugin_habits_facts: yes
-          plugin_habits_charts: no
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          config_timezone: Europe/Paris
-          output_action: pull-request
-
-      # Display coding habits and recent activity, only charts section (setup timezone for accurate metrics)
-      - name: 💡 Habits plugin (charts)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.habits.charts.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_habits: yes
-          plugin_habits_facts: no
-          plugin_habits_charts: yes
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          config_timezone: Europe/Paris
-          output_action: pull-request
-
-      # ======================================================================================
-      # 🙋 Introduction
-
-      # Display introduction (user)
-      - name: 🙋 Introduction plugin
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.introduction.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: github
-          base: header
-          plugin_introduction: yes
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # Display introduction (repository)
-      - name: 🙋 Introduction plugin (repository)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.introduction.repository.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          template: repository
-          repo: metrics
-          base: header
-          plugin_introduction: yes
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # 📅 Isometric commit calendar
-
-      # Display isometric calendar (180 days)
-      - name: 📅 Isocalendar plugin
-        if: ${{ success() || failure() }}
+      - name: 📅 Isocalendar plugin (full year)
         uses: lowlighter/metrics@master
         with:
           filename: metrics.plugin.isocalendar.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_isocalendar: yes
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # Display isometric calendar (365 days)
-      - name: 📅 Isocalendar plugin (full year)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.isocalendar.fullyear.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
 
-      # ======================================================================================
-      # 🈷️ Most used languages
-
-      # Display most used languages (with some unwanted languages ignored)
-      - name: 🈷️ Languages plugin
-        if: ${{ success() || failure() }}
+      - name: 🈷️ Languages plugin (detailed)
         uses: lowlighter/metrics@master
         with:
           filename: metrics.plugin.languages.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
           plugin_languages: yes
-          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
           plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
 
-      # 🈷️ Display most used languages (with some unwanted languages ignored, with details)
-      - name: 🈷️ Languages plugin (detailed)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.languages.details.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_languages: yes
-          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
-          plugin_languages_details: bytes-size, percentage
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # 📜 Licenses
-
-      # List permissions, limitations and conditions of licenses and dependencies
-      - name: 📜 Licenses
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.licenses.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          template: repository
-          repo: metrics
-          plugin_licenses: yes
-          plugin_licenses_setup: npm ci
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # List ratio of licenses and dependencies
-      - name: 📜 Licenses (ratio)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.licenses.ratio.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          template: repository
-          repo: metrics
-          plugin_licenses: yes
-          plugin_licenses_setup: npm ci
-          plugin_licenses_legal: no
-          plugin_licenses_ratio: yes
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # List permissions, limitations and conditions of licenses and dependencies (metrics)
-      - name: 📜 Licenses (repository)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.licenses.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          template: repository
-          repo: metrics
-          plugin_licenses: yes
-          plugin_licenses_setup: npm ci
-          plugin_licenses_legal: yes
-          plugin_licenses_ratio: yes
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # 👨‍💻 Lines of code changed
-
-      # Display number of line changed (this is part of base content "repositories" section, so you need to enable it)
       - name: 👨‍💻 Lines plugin
-        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@master
         with:
           filename: metrics.plugin.lines.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: repositories
           plugin_lines: yes
           plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
 
-      # ======================================================================================
-      # ⏱️ Website performances
-
-      # Google PageSpeed insight website audit (token option but advised)
-      # This use website linked to GitHub account
-      - name: ⏱️ PageSpeed plugin
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.pagespeed.svg
-          token: NOT_NEEDED
-          plugin_pagespeed: yes
-          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
-          plugin_pagespeed_url: ${{ secrets.WEBSITE_URL }}
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # Google PageSpeed insight website audit, with additional metrics (token option but advised)
-      # This use website linked to GitHub account
-      - name: ⏱️ PageSpeed plugin (detailed)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.pagespeed.detailed.svg
-          token: NOT_NEEDED
-          plugin_pagespeed: yes
-          plugin_pagespeed_detailed: yes
-          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
-          plugin_pagespeed_url: ${{ secrets.WEBSITE_URL }}
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # Google PageSpeed insight website audit, with a screenshot of your website (token option but advised)
-      # This use website linked to GitHub account
-      - name: ⏱️ PageSpeed plugin (screenshot)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.pagespeed.screenshot.svg
-          token: NOT_NEEDED
-          plugin_pagespeed: yes
-          plugin_pagespeed_screenshot: yes
-          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
-          plugin_pagespeed_url: ${{ secrets.WEBSITE_URL }}
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # 🎼 Music plugin
-
-      # Display random tracks from given embed playlist
-      # Note that :
-      # - "plugin_music_mode" and "plugin_music_provider" are both optional as they're deduced from "plugin_music_playlist"
-      # - "plugin_music_token" is not needed since it uses pupeeter to retrieve tracks
-      - name: 🎼 Music plugin (playlist)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.music.playlist.svg
-          token: NOT_NEEDED
-          plugin_music: yes
-          plugin_music_playlist: ${{ secrets.MUSIC_PLAYLIST }}
-          plugin_music_limit: 2
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # Display recently played music
-      # Note that in this mode "plugin_music_mode", "plugin_music_provider" and "plugin_music_token" are all required
-      - name: 🎼 Music plugin (recent)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.music.recent.svg
-          token: NOT_NEEDED
-          plugin_music: yes
-          plugin_music_provider: spotify
-          plugin_music_mode: recent
-          plugin_music_token: ${{ secrets.SPOTIFY_TOKENS }}
-          plugin_music_limit: 2
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # 🧑‍🤝‍🧑 People plugin
-
-      # Display followers and followed users
-      - name: 🧑‍🤝‍🧑 People plugin
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.people.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_people: yes
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # Display followers
-      - name: 🧑‍🤝‍🧑 People plugin (followers)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.people.followers.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_people: yes
-          plugin_people_types: followers
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # Display followed users
-      - name: 🧑‍🤝‍🧑 People plugin (following)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.people.following.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_people: yes
-          plugin_people_types: following
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # Special thanks to listed users
-      - name: 🧑‍🤝‍🧑 People plugin (special thanks)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.people.thanks.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_people: yes
-          plugin_people_types: thanks
-          plugin_people_thanks: lowlighter, botlighter, octocat
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # Repository people
-      - name: 🧑‍🤝‍🧑 People plugin (repository template)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.people.repository.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          template: repository
-          repo: metrics
-          plugin_people: yes
-          plugin_people_types: contributors, stargazers, watchers, sponsors
-          plugin_people_sponsors_custom: lowlighter, iamsainikhil
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # Sponsors
-      - name: 🧑‍🤝‍🧑 People plugin (sponsors)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.sponsors.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_people: yes
-          plugin_people_types: sponsors
-          plugin_people_sponsors_custom: lowlighter, iamsainikhil
-          plugin_people_size: 48
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # ✒️ Recent posts
-
-      # Display recent posts
       - name: ✒️ Posts plugin
-        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@master
         with:
           filename: metrics.plugin.posts.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
           plugin_posts: yes
           plugin_posts_source: dev.to
           plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
 
-      # Display recent posts with descriptions and cover images
-      - name: ✒️ Posts plugin
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.posts.full.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_posts: yes
-          plugin_posts_source: dev.to
-          plugin_posts_descriptions: yes
-          plugin_posts_covers: yes
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # 🗂️ Projects
-
-      # Display active projects
-      # Note that :
-      # - A "public_repo" scope is required
-      # - It uses user projects by default (those which are on your profile)
-      # - You can use repositories projects by providing a list of comma-separated endpoints
-      # - You can set "plugin_projects_limit" to 0 to display only "plugin_projects_repositories"
-      # - You'll need to enable "Track project progress" in your projects to display a progress bar
-      - name: 🗂️ Projects plugin
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.projects.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_projects: yes
-          plugin_projects_repositories: lowlighter/metrics/projects/1
-          plugin_projects_descriptions: yes
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # 🎭 Comment reactions plugin
-
-      # Display comment reactions statistics
-      - name: 🎭 Reactions plugin
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.reactions.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_reactions: yes
-          plugin_reactions_limit: 100
-          plugin_reactions_details: percentage
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # 🗨️ Stackoverflow plugin
-
-      # Display Stackoverflow metrics
-      - name: 🗨️ Stackoverflow plugin
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.stackoverflow.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_stackoverflow: yes
-          plugin_stackoverflow_user: 1
-          plugin_stackoverflow_sections: answers-top
-          plugin_stackoverflow_limit: 1
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # ✨ Stargazers over last weeks
-
-      # Display stargazers evolution over last weeks
       - name: ✨ Stargazers plugin
-        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@master
         with:
           filename: metrics.plugin.stargazers.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
           plugin_stargazers: yes
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
+          plugins_errors_fatal:
+            ${{ github.repository == 'lowlighter/lowlighter' }}
 
-      # ======================================================================================
-      # 🌟 Recently starred repositories
-
-      # Display latest starred repositories
+            # Display latest starred repositories
       - name: 🌟 Stars plugin
-        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@master
         with:
           filename: metrics.plugin.stars.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
           plugin_stars: yes
-          plugin_stars_limit: 3
+          plugin_stars_limit: 2
           plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
 
-      # ======================================================================================
-      # 📌 Starred topics
-
-      # Display starred topics (as labels)
-      - name: 📌 Topics plugin
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.topics.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_topics: yes
-          plugin_topics_limit: 12
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # Display starred topics (as icons)
-      # Note that only topics with an icon will be displayed (most of majors topics have one though)
-      - name: 📌 Topics plugin (mastered)
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.topics.mastered.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_topics: yes
-          plugin_topics_limit: 0
-          plugin_topics_mode: mastered
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # 🧮 Repositories traffic
-
-      # Display number of repositories views (this is part of base content "repositories" section, so you need to enable it)
-      # Note that a "repo" scope is required
-      - name: 🧮 Traffic plugin
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.traffic.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: repositories
-          plugin_traffic: yes
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # 🐤 Latest tweets
-
-      # Display your latest tweets (token required)
-      # Don't forget to update your GitHub profile with your twitter username
-      - name: 🐤 Tweets plugin
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.tweets.svg
-          token: NOT_NEEDED
-          user: botlighter
-          plugin_tweets: yes
-          plugin_tweets_token: ${{ secrets.TWITTER_TOKEN }}
-          plugin_tweets_user: github
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # Display your latest tweets with attachments (token required)
-      # Don't forget to update your GitHub profile with your twitter username
-      - name: 🐤 Tweets plugin
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.tweets.attachments.svg
-          token: NOT_NEEDED
-          user: botlighter
-          plugin_tweets: yes
-          plugin_tweets_token: ${{ secrets.TWITTER_TOKEN }}
-          plugin_tweets_attachments: yes
-          plugin_tweets_user: github
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # ⏰ WakaTime plugin
-
-      # Display your wakatime metrics
-      - name: ⏰ WakaTime plugin
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.wakatime.svg
-          token: NOT_NEEDED
-          plugin_wakatime: yes
-          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
-          plugin_wakatime_token: MOCKED_TOKEN # ${{ secrets.WAKATIME_TOKEN }}
-          use_mocked_data: yes # ⚠️ Using mocked data because I don't really use WakaTime
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-          output_action: pull-request
-
-      # ======================================================================================
-      # 💬 Others
-
-      # Illustrate plugin errors :
-      # ${{ secrets.METRICS_TOKEN }} is missing "public_repo" scope, which is required for "plugin_projects"
       - name: 💬 Plugin error example
-        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@master
         with:
           filename: metrics.plugin.error.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
           plugin_projects: yes
-          output_action: pull-request
-
-      # Metrics for "github" organization
-      - name: 💬 Organization metrics
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.organization.svg
-          user: github
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: header, repositories
-          output_action: pull-request
 
       # Illustrate header hidden features with debug flags
       # "--cakeday" will act as if it's your account birthday
       # "--hireable" will act as if "Available for hire" is enabled
       # "--halloween" will act as if it was halloween, changing the colors of calendars
       - name: 💬 Header (hidden features)
-        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@master
         with:
           filename: metrics.header.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: header
           debug_flags: --cakeday --hireable --halloween
-          output_action: pull-request-squash
 
-      # ======================================================================================
-      # 🚧 Debug
-
-      - name: 🚧 Check retries feature
-        if: false
+      - name: Topics plugin (mastered)
         uses: lowlighter/metrics@master
-        continue-on-error: true
         with:
+          filename: metrics.plugin.topics.mastered.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          retries: 3
-          retries_delay: 0
-          debug_flags: --error
-          debug: yes
-          dryrun: yes
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_topics: yes
+          plugin_topics_mode: mastered
+          plugin_topics_limit: 0
+          plugins_errors_fatal: yes
