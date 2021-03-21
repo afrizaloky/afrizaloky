@@ -13,7 +13,7 @@ on:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
-    if: "github.repository == 'lowlighter/lowlighter'"
+    if: "github.repository == 'afrizaloky/afrizaloky'"
     steps:
       # ======================================================================================
       # 🖼️ TEMPLATES
@@ -40,8 +40,8 @@ jobs:
           template: repository
           filename: metrics.repository.svg
           token: ${{ secrets.METRICS_BOT_TOKEN }}
-          user: lowlighter
-          repo: metrics
+          user: afrizaloky
+          repo: afrizaloky
           plugin_lines: yes
           plugin_followup: yes
           plugin_projects: yes
