@@ -187,6 +187,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.wakatime.svg
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }} # Required
           plugin_wakatime_days: 7 # Display last week stats
