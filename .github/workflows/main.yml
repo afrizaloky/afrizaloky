@@ -31,16 +31,6 @@ jobs:
           plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
           config_padding: 7%, 20%
 
-      - name: 🎟️ Follow-up plugin
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.followup.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          base: ""
-          plugin_followup: yes
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-
       - name: 💡 Habits plugin
         uses: lowlighter/metrics@master
         with:
@@ -94,16 +84,6 @@ jobs:
           base: ""
           plugin_posts: yes
           plugin_posts_source: dev.to
-          plugins_errors_fatal: ${{ github.repository == 'lowlighter/lowlighter' }}
-
-      - name: ✨ Stargazers plugin
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.stargazers.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          base: ""
-          plugin_stargazers: yes
           plugins_errors_fatal:
             ${{ github.repository == 'lowlighter/lowlighter' }}
 
