@@ -139,7 +139,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           base: header
-          debug_flags: --cakeday --hireable --halloween
+          debug_flags: --cakeday --halloween
 
       - name: Topics plugin (mastered)
         uses: lowlighter/metrics@master
