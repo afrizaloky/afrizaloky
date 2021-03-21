@@ -182,3 +182,13 @@ jobs:
           plugin_topics_limit: 0
           plugin_topics_mode: mastered
           config_order: base.header, isocalendar, languages, topics
+
+      - name: Waka Time
+        uses: lowlighter/metrics@latest
+        with:
+          # ... other options
+          plugin_wakatime: yes
+          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }} # Required
+          plugin_wakatime_days: 7 # Display last week stats
+          plugin_wakatime_sections: time, projects, projects-graphs # Display time and projects sections, along with projects graphs
+          plugin_wakatime_limit: 4
