@@ -152,3 +152,16 @@ jobs:
           plugin_topics_mode: mastered
           plugin_topics_limit: 0
           plugins_errors_fatal: yes
+      - name: Personal metrics (anilist)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.personal.anilist.svg
+          token: NOT_NEEDED
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          plugin_anilist: yes
+          plugin_anilist_medias: anime
+          plugin_anilist_sections: favorites, characters,watching
+          plugin_anilist_shuffle: yes # Shuffle data for more varied outputs
+          plugin_anilist_user: .user.login # Use same username as GitHub login
+          plugin_anilist_limit: 2
+          plugin_anilist_limit_characters: 22
