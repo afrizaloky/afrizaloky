@@ -5,7 +5,7 @@
 #
 # ⚠️ Following jobs all uses @master branch (unstable branch with unreleased features)
 
-name: Metrics (examples)
+name: Metrics
 on:
   schedule:
     - cron: "0 2-23/4 * * *"
@@ -13,7 +13,6 @@ on:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
-    if: "github.repository == 'afrizaloky/afrizaloky'"
     steps:
       # ======================================================================================
       # 🖼️ TEMPLATES
