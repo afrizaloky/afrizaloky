@@ -29,7 +29,7 @@ jobs:
           plugin_tweets_user: TwitterDev
 
       - name: Stock Price
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@master
         with:
           filename: metrics.plugin.stock.svg
           committer_token: ${{ secrets.GITHUB_TOKEN }}
