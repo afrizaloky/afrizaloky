@@ -1,0 +1,30 @@
+name: Stock Price
+on:
+  # Schedule updates (each hour)
+  schedule: [{ cron: "0 15 * * *" }]
+  # Lines below let you run workflow manually and on each commit (optional)
+  push: { branches: ["master", "main"] }
+  workflow_dispatch:
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      # See action.yml for all options
+      - uses: lowlighter/metrics@latest
+        with:
+          # Your GitHub token
+          token: ${{ secrets.METRICS_TOKEN }}
+          # GITHUB_TOKEN is a special auto-generated token restricted to current repository, which is used to push files in it
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+
+      
+      - name: Stock Price
+        uses: lowlighter/metrics@master
+        with:
+          filename: metrics.plugin.stock.svg
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          token: NOT_NEEDED
+          plugin_stock: yes
+          plugin_stock_token: ${{ secrets.STOCK_TOKEN }} # RapidAPI Yahoo Finance token
+          plugin_stock_symbol: TSLA # Display Tesla stock price
+          plugin_stock_duration: 1d # Display last day of market
