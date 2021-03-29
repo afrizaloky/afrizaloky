@@ -9,7 +9,7 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-      - name: Stock Price
+      - name: TSLA
         uses: lowlighter/metrics@master
         with:
           filename: metrics.plugin.stock.svg
@@ -18,4 +18,24 @@ jobs:
           plugin_stock: yes
           plugin_stock_token: ${{ secrets.STOCK_TOKEN }} # RapidAPI Yahoo Finance token
           plugin_stock_symbol: TSLA # Display Tesla stock price
+          plugin_stock_duration: 1d # Display last day of market
+      - name: BBCA
+        uses: lowlighter/metrics@master
+        with:
+          filename: metrics.plugin.BBCA.svg
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          token: NOT_NEEDED
+          plugin_stock: yes
+          plugin_stock_token: ${{ secrets.STOCK_TOKEN }} # RapidAPI Yahoo Finance token
+          plugin_stock_symbol: BBCA.JK # Display Tesla stock price
+          plugin_stock_duration: 1d # Display last day of market
+      - name: BBTN
+        uses: lowlighter/metrics@master
+        with:
+          filename: metrics.plugin.BBTN.svg
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          token: NOT_NEEDED
+          plugin_stock: yes
+          plugin_stock_token: ${{ secrets.STOCK_TOKEN }} # RapidAPI Yahoo Finance token
+          plugin_stock_symbol: BBTN.JK # Display Tesla stock price
           plugin_stock_duration: 1d # Display last day of market

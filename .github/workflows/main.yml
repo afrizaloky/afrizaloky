@@ -28,17 +28,6 @@ jobs:
           plugin_tweets_limit: 2 # Limit to 2 tweets
           plugin_tweets_user: TwitterDev
 
-      - name: Stock Price
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.BBCA.svg
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          token: NOT_NEEDED
-          plugin_stock: yes
-          plugin_stock_token: ${{ secrets.STOCK_TOKEN }} # RapidAPI Yahoo Finance token
-          plugin_stock_symbol: BBCA.JK # Display Tesla stock price
-          plugin_stock_duration: 1d # Display last day of market
-
       - name: 📰 Activity plugin
         uses: lowlighter/metrics@master
         with:
