@@ -1,0 +1,2048 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="269" class="">
+
+  <defs><style/></defs>
+  <style>/* SVG global context */
+  svg {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 14px;
+    color: #777777;
+  }
+
+/* Headers */
+  h1, h2, h3 {
+    margin: 8px 0 2px;
+    padding: 0;
+    color: #0366d6;
+    font-weight: normal;
+  }
+  h1 svg, h2 svg, h3 svg {
+    fill: currentColor;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+
+/* Fields */
+  section &gt; .field {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+    white-space: nowrap;
+  }
+  .field svg {
+    margin: 0 8px;
+    fill: #959da5;
+    flex-shrink: 0;
+  }
+  .field.error {
+    color: #cb2431;
+  }
+  .field.error svg {
+    fill: #cb2431;
+  }
+
+/* Displays */
+  .row {
+    display: flex;
+  }
+  .row section {
+    flex: 1 1 0;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .center {
+    justify-content: center;
+  }
+  .horizontal {
+    justify-content: space-around;
+  }
+  .horizontal-wrap {
+    flex-wrap: wrap;
+  }
+  .horizontal .field {
+    flex: 1 1 0;
+  }
+  .no-wrap {
+    white-space: nowrap;
+  }
+  .fill-width {
+    width: 100%;
+  }
+  .margin-bottom {
+    margin-bottom: 16px;
+  }
+
+/* User avatar */
+  .avatar {
+    border-radius: 50%;
+    margin: 0 6px;
+  }
+
+  .avatar.organization {
+    border-radius: 15%;
+  }
+
+/* Commit calendar */
+  .calendar.field {
+    margin: 4px 0;
+    margin-left: 7px;
+  }
+  .calendar .day {
+    outline: 1px solid rgba(27,31,35,.04);
+    outline-offset: -1px;
+  }
+
+/* Progress bars */
+  svg.bar {
+    margin: 4px 0;
+  }
+
+/* Language */
+  .field.language {
+    margin: 0 8px;
+    flex-grow: 0;
+  }
+
+  .field.language.details {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .field.language.details small {
+    display: flex;
+    justify-content: space-between;
+    color: #666666;
+    text-align: right;
+  }
+
+  .field.language.details &gt; *, .field.language.details small &gt; * {
+    flex: 1 1 0;
+  }
+
+/* Labels */
+  .label {
+    background-color: #58A6FF30;
+    color: #0366D6;
+    padding: 0 10px;
+    font-weight: 500;
+    line-height: 22px;
+    margin: 2px 5px;
+    white-space: nowrap;
+    border-radius: 32px;
+    font-size: 12px;
+  }
+
+/* Habits */
+  .habits {
+    margin: 0;
+    list-style-type: none;
+    padding-left: 37px;
+  }
+
+/* Footer */
+  footer {
+    margin-top: 8px;
+    font-size: 10px;
+    font-style: italic;
+    color: #666666;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 4px;
+  }
+
+/* Speed test categories */
+  .categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4px;
+  }
+  .categorie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+  }
+
+/* Gauges */
+  .gauge {
+    stroke-linecap: round;
+    fill: none;
+  }
+  .gauge.high {
+    color: #18b663;
+  }
+  .gauge.average {
+    color: #fb8c00;
+  }
+  .gauge.low {
+    color: #e53935;
+  }
+  .gauge.info {
+    color: #58A6FF;
+  }
+  .gauge-base, .gauge-arc {
+    stroke: currentColor;
+    stroke-width: 10;
+  }
+  .gauge-base {
+    stroke-opacity: .2;
+  }
+  .gauge-arc {
+    fill: none;
+    stroke-dashoffset: 0;
+    animation-delay: 250ms;
+    animation: animation-gauge 1s ease forwards
+  }
+  .gauge text {
+    fill: currentColor;
+    font-size: 40px;
+    font-family: monospace;
+    text-anchor: middle;
+    font-weight: 600;
+  }
+  .gauge .title {
+    font-size: 18px;
+    color: #777777;
+  }
+  @keyframes animation-gauge {
+    from {
+      stroke-dasharray: 0 329;
+    }
+  }
+  .audits {
+    margin-top: 8px;
+  }
+  .audit.text {
+    min-width: 42px;
+  }
+  .audit svg {
+    margin: 0;
+  }
+  .audit.high {
+    fill: #18b663;
+  }
+  .audit.average {
+    fill: #fb8c00;
+  }
+  .audit.low {
+    fill: #e53935;
+  }
+
+  .screenshot {
+    width: 452px;
+    height: 315px;
+    margin: 8px 14px 4px;
+    border-radius: 5px;
+  }
+
+/* Music plugin */
+  .tracklist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 28px;
+    margin-top: 4px;
+    width: 100%;
+  }
+  .track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+  }
+  .track img {
+    margin: 0 10px;
+    border-radius: 7px;
+  }
+  .track .name {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+  }
+  .track .artist, .track .played-at {
+    font-size: 12px;
+    color: #666666;
+  }
+
+/* Posts plugin */
+  .post {
+    align-items: flex-start;
+  }
+  .post .infos {
+    display: flex;
+    margin-bottom: 4px;
+  }
+  .post .infos .left {
+    flex-shrink: 0;
+    font-size: 12px;
+    color: #666666;
+    width: 72px;
+    padding-top: 1px;
+    text-align: center;
+  }
+  .post .infos .cover {
+    width: 100%;
+    height: 56px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .post .infos .right {
+    width: 376px;
+    padding-left: 4px;
+  }
+  .post .infos .title, .post .infos .description {
+    font-size: 14px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 38px;
+    /* May not work in all browsers */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .post .infos .description {
+    margin-top: 3px;
+    font-size: 12px;
+    max-height: 48px;
+    color: #666666;
+    -webkit-line-clamp: 3;
+  }
+
+/* Topics */
+  .topics {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .topics img {
+    border-radius: 5px;
+    margin: 4px;
+  }
+
+/* Tweets */
+  .tweet {
+    font-size: 13px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-left: 18px;
+    border-left: 3px solid #777777B2;
+    padding-left: 6px;
+  }
+
+  .tweet .mention, .tweet .link, .tweet .hashtag {
+    color: #0366d6;
+  }
+
+  .tweet .date {
+    margin: 6px 0;
+    font-size: 12px;
+    color: #666666;
+  }
+
+  .tweet .attachments {
+    display: flex;
+    width: 450px;
+    margin-top: 8px;
+  }
+
+  .tweet .attachments &gt; div {
+    flex: 1 1 0;
+    width: 0;
+    border-radius: 6px;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin: 2px;
+    box-shadow: 0px 0px 1px #777777A0;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .tweet .attachments .infos {
+    background-color: #000000D0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 4px;
+  }
+
+  .tweet .attachments .infos &gt; div {
+    margin: 4px 8px 0;
+  }
+
+  .tweet .attachments .infos .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .tweet .attachments .infos .description {
+    font-size: 11px;
+    color: #666666;
+  }
+
+/* Charts and graphs */
+  .chart {
+    padding: 0 8px;
+  }
+
+  .chart-bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin: 8px 0 4px;
+    flex-grow: 1;
+    min-height: 70px;
+  }
+
+  .chart-bars .entry {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    color: #666666;
+  }
+
+  .chart-bars .entry .value {
+    font-size: 7px;
+  }
+
+  .chart-bars .entry .empty {
+    width: 100%;
+    text-align: center;
+  }
+
+  .chart-bars .bar {
+    width: 7px;
+    background-color: var(--color-calendar-graph-day-bg);
+    border: 1px solid var(--color-calendar-graph-day-border);
+    border-radius: 5px;
+  }
+
+  .chart-bars.horizontal {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .chart-bars.horizontal .entry {
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    min-height: 1rem;
+  }
+
+  .chart-bars.horizontal .entry .name {
+    flex-shrink: 0;
+    text-align: right;
+    width: 34%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .chart-bars .entry .bottom {
+    margin-bottom: -1rem;
+    line-height: 1rem;
+  }
+
+  .chart-bars.horizontal .bar {
+    height: 7px;
+    width: auto;
+    margin: 0 6px;
+  }
+
+/* Repository */
+  .repository {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 6px 0;
+  }
+
+  .repository .name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 440px;
+  }
+
+  .repository .name span:first-child {
+    color: #58a6ff;
+  }
+
+  .repository .name span:last-child {
+    color: #666666;
+    font-size: 10px;
+  }
+
+  .repository .description {
+    display: block;
+    width: 440px;
+    white-space: normal;
+  }
+
+  .repository .description, .repository .infos {
+    color: #666666;
+    margin-left: 38px;
+    font-size: 13px;
+  }
+
+  .repository .infos &gt; div {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+  }
+
+  .repository .infos svg {
+    margin: 0;
+    margin-right: 4px;
+  }
+
+/* Activity */
+  .activity {
+    margin-bottom: 12px;
+  }
+
+  .activity .field {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 450px;
+    white-space: nowrap;
+    margin-bottom: 0;
+  }
+
+  .activity .repo, .activity .issue, .activity .commit .sha {
+    color: #58a6ff;
+    margin: 0 4px;
+  }
+
+  .activity .issue {
+    flex-grow: 1;
+    width: 0%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .activity .code {
+    background-color: #7777771F;
+    padding: 1px 5px;
+    font-size: 80%;
+    border-radius: 6px;
+    color: #777777;
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    margin: 0 4px -3px;
+  }
+
+  .activity .bold, .activity .user {
+    font-weight: 600;
+    margin: 0 4px;
+  }
+
+  .activity .details, .activity .timestamp {
+    padding-left: 42px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    color: #666666;
+  }
+
+  .activity .timestamp {
+    font-size: 10px;
+    margin-top: 4px;
+  }
+
+  .activity .details &gt; div {
+    display: flex;
+    align-items: center;
+  }
+
+  .activity .commit .sha {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  }
+
+  .activity .commit .message {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 360px;
+    white-space: nowrap;
+  }
+
+  .activity .details .comment {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    width: 420px;
+    margin-top: 6px;
+    border-left: 3px solid #777777B2;
+    padding-left: 6px;
+    max-height: 38px;
+    /* May not work in all browsers */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+/* People */
+  .people {
+    padding: 0 10px;
+  }
+
+  .people .avatar {
+    margin: 0 2px;
+  }
+
+/* Projects */
+  .project .description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    width: 420px;
+    margin-left: 37px;
+    max-height: 38px;
+    font-size: 12px;
+    white-space: normal;
+    /* May not work in all browsers */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+/* Anilist */
+  .anilist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 28px;
+    margin-top: 4px;
+  }
+
+  .anilist .media {
+    display: flex;
+    margin-bottom: 4px;
+    width: 450px;
+  }
+  .anilist .media img {
+    margin: 0 10px;
+    border-radius: 7px;
+  }
+
+  .anilist .media .about {
+    flex-grow: 1;
+  }
+  .anilist .media .name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 14px;
+    color: #58a6ff;
+  }
+  .anilist .media .infos {
+    font-size: 12px;
+    color: #666666;
+  }
+  .anilist .media .infos &gt; div {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 16px;
+  }
+  .anilist .media .infos svg {
+    fill: currentColor;
+    height: 12px;
+    width: 12px;
+    margin: 0;
+    margin-right: 4px;
+  }
+
+  .anilist .media .description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    width: 380px;
+    max-height: 38px;
+    font-size: 12px;
+    white-space: normal;
+    /* May not work in all browsers */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .anilist .characters {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .anilist .characters img {
+    margin: 2px;
+    border-radius: 7px;
+  }
+
+/* Licenses */
+  .licenses {
+    display: flex;
+  }
+  .licenses .column {
+    align-items: flex-start;
+    font-size: 12px;
+    color: #666666;
+    flex-shrink: 0;
+  }
+  .licenses-details {
+    margin-top: 8px;
+  }
+  .field.license.details {
+    display: flex;
+    justify-content: space-between;
+  }
+  .field.license.details small {
+    display: flex;
+    justify-content: space-between;
+    color: #666666;
+    text-align: right;
+  }
+  .licenses .column:nth-child(1) {
+    margin-left: 13px;
+    width: 25%;
+  }
+  .licenses .column:nth-child(2) {
+    width: 25%;
+  }
+  .licenses .column:nth-child(3) {
+    width: 50%;
+  }
+  .licenses .column svg {
+    height: 12px;
+    width: 12px;
+  }
+  .licenses .column .title {
+    font-weight: 600;
+    margin-left: 15px;
+  }
+  .licenses .column .permission svg {
+    fill: #56d364;
+  }
+  .licenses .column .limitation svg {
+    fill: #f85149;
+  }
+  .licenses .column .condition svg {
+    fill: #58a6ff;
+  }
+
+/* Contributors */
+  .contributors {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 6px;
+  }
+  .contributors .label {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+  }
+  .contributors .label img {
+    margin-left: 0;
+  }
+  .contributors .contributions {
+    display: flex;
+    align-items: center;
+    font-size: .7rem;
+    margin-left: 6px;
+    margin-right: -10px;
+    background-color: #DDEEFF;
+    padding: 0 7px;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+  }
+  .contributors .contributions svg {
+    fill: #0366D6;
+    margin-left: 4px;
+    width: .8rem;
+    height: .8rem;
+  }
+
+/* Introduction */
+  .introduction {
+    white-space: normal;
+    margin: 0 13px 2px;
+  }
+
+/* Stackoverflow */
+  .stackoverflow {
+    margin-left: 38px;
+  }
+  .stackoverflow .entry {
+    margin: 4px 0 12px;
+  }
+  .stackoverflow .title {
+    color: #58a6ff;
+    white-space: normal;
+    align-items: flex-start;
+  }
+  .stackoverflow .body, .stackoverflow .infos {
+    color: #666666;
+    font-size: 13px;
+    margin-left: 32px;
+  }
+  .stackoverflow .infos {
+    display: flex;
+    align-items: center;
+  }
+  .stackoverflow .infos &gt; div {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 16px;
+  }
+  .stackoverflow .infos svg {
+    fill: currentColor;
+    height: 12px;
+    width: 12px;
+    margin: 0;
+    margin-right: 4px;
+    flex-shrink: 0;
+  }
+  .stackoverflow .body {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-left: 3px solid #777777B2;
+    padding-left: 6px;
+    width: 400px;
+  }
+
+/* Achievements */
+  .achievement {
+    display: flex;
+    margin: 4px 0;
+  }
+  .achievement .icon {
+    margin: 0 4px;
+    width: 44px;
+    height: 44px;
+  }
+  .achievement .text {
+    font-size: 12px;
+    color: #666666;
+  }
+  .achievement .unlock {
+    font-size: 9px;
+    color: #666666;
+  }
+  .achievement .title {
+    font-size: 14px;
+    color: #58A6FF;
+  }
+  .achievement .gauge.info {
+    color: #58A6FF;
+  }
+  .achievement.x .title {
+    color: #666666;
+  }
+  .achievement.x .gauge.info {
+    color: #B0B0B0;
+  }
+  .achievement.b .title {
+    color: #9D8FFF;
+  }
+  .achievement.b .gauge.info {
+    color: #9E91FF;
+  }
+  .achievement.a .title {
+    color: #D79533;
+  }
+  .achievement.a .gauge.info {
+    color: #E7BD69;
+  }
+  .achievement.s .title {
+    color: #FF0000;
+  }
+  .achievement.s .gauge.info {
+    color: #FF0000;
+  }
+  .achievement.s .icon {
+    filter: sepia() saturate(100);
+  }
+  .achievement.secret .title{
+    color: #FF76CD;
+  }
+  .achievement.secret .gauge.info {
+    color: #FF79D1;
+  }
+  .achievement .gh {
+    border: 1px solid currentColor;
+    border-radius: 16px;
+    font-size: 10px;
+    padding: 0 5px;
+  }
+  .achievement .gauge-base, .achievement .gauge-arc {
+    stroke-width: 6;
+  }
+
+/* RSS feed */
+  .rss {
+    align-items: flex-start;
+  }
+  .rss .infos {
+    margin-bottom: 3px;
+  }
+  .rss .infos .date {
+    font-size: 10px;
+    color: #666666;
+  }
+
+/* Skyline */
+  .skyline-animation {
+    margin: 2px 13px 6px;
+    border-radius: 10px;
+    background-color: #030D21;
+    overflow: hidden;
+  }
+
+/* Charts */
+  .ct-line {
+    stroke-width: 2px !important;
+    stroke: #58A6FF !important;
+  }
+  .ct-area {
+    fill: #58A6FF !important;
+  }
+  .ct-label {
+    fill: rgba(127, 127, 127, 0.8) !important;
+    color: rgba(127, 127, 127, 0.8) !important;
+  }
+  .ct-grid {
+    stroke: rgba(127, 127, 127, 0.4) !important;
+  }
+
+/* Fade animation */
+  .af {
+    opacity: 0;
+    animation: animation-fade 1s ease forwards;
+  }
+  @keyframes animation-fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+/* Twemoji and GitHub emoji */
+  .twemoji, .gemoji {
+    height: 1em;
+    width: 1em;
+    margin-bottom: -.125em;
+  }
+
+/* Cake day */
+  .cakeday, .cakeday svg {
+    animation: animation-rainbow 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1);
+  }
+
+/* Rainbow animation */
+  @keyframes animation-rainbow {
+    0%, 100%{ color: #7F00FF; fill: #7F00FF; }
+    14% { color: #A933FF; fill: #A933FF; }
+    29%{ color: #007FFF; fill: #007FFF; }
+    43%{ color: #00FF7F; fill: #00FF7F; }
+		57%{ color: #FFFF00; fill: #FFFF00; }
+		71%{ color: #FF7F00; fill: #FF7F00; }
+		86%{ color: #FF0000; fill: #FF0000; }
+  }
+
+/* Calendar */
+  :root {
+    --color-calendar-graph-day-bg: #ebedf0;
+    --color-calendar-graph-day-border: rgba(27,31,35,0.06);
+    --color-calendar-graph-day-L1-bg: #9be9a8;
+    --color-calendar-graph-day-L2-bg: #40c463;
+    --color-calendar-graph-day-L3-bg: #30a14e;
+    --color-calendar-graph-day-L4-bg: #216e39;
+    --color-calendar-halloween-graph-day-L1-bg: #ffee4a;
+    --color-calendar-halloween-graph-day-L2-bg: #ffc501;
+    --color-calendar-halloween-graph-day-L3-bg: #fe9600;
+    --color-calendar-halloween-graph-day-L4-bg: #03001c;
+    --color-calendar-graph-day-L4-border: rgba(27,31,35,0.06);
+    --color-calendar-graph-day-L3-border: rgba(27,31,35,0.06);
+    --color-calendar-graph-day-L2-border: rgba(27,31,35,0.06);
+    --color-calendar-graph-day-L1-border: rgba(27,31,35,0.06);
+  }
+
+/* End delimiter */
+  #metrics-end {
+    width: 100%;
+  }
+
+  .no-animations * {
+    transition-delay: 0s !important;
+    transition-duration: 0s !important;
+    animation-delay: -0.0001s !important;
+    animation-duration: 0s !important;
+    animation-play-state: paused !important;
+    caret-color: transparent !important;
+  }</style>
+
+  <foreignObject x="0" y="0" width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+
+      
+        
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+
+
+
+      
+        
+      
+        
+      
+        
+
+      
+        
+  <section>
+    <h2 class="field">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M10.75 9a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5h-1.5z"/><path fill-rule="evenodd" d="M0 3.75C0 2.784.784 2 1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0114.25 14H1.75A1.75 1.75 0 010 12.25v-8.5zm14.5 0V5h-13V3.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25zm0 2.75h-13v5.75c0 .138.112.25.25.25h12.5a.25.25 0 00.25-.25V6.5z"/></svg>
+      Stock prices for TSLA
+    </h2>
+    
+      <div class="row">
+        <section>
+          <div class="field">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M1.5 14.25c0 .138.112.25.25.25H4v-1.25a.75.75 0 01.75-.75h2.5a.75.75 0 01.75.75v1.25h2.25a.25.25 0 00.25-.25V1.75a.25.25 0 00-.25-.25h-8.5a.25.25 0 00-.25.25v12.5zM1.75 16A1.75 1.75 0 010 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 00.25-.25V8.285a.25.25 0 00-.111-.208l-1.055-.703a.75.75 0 11.832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0114.25 16h-3.5a.75.75 0 01-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 01-.75-.75V14h-1v1.25a.75.75 0 01-.75.75h-3zM3 3.75A.75.75 0 013.75 3h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 3.75zM3.75 6a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM3 9.75A.75.75 0 013.75 9h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 9.75zM7.75 9a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM7 6.75A.75.75 0 017.75 6h.5a.75.75 0 010 1.5h-.5A.75.75 0 017 6.75zM7.75 3a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5z"/></svg>
+            Tesla, Inc.
+          </div>
+          <div class="field">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M6 2a.75.75 0 01.696.471L10 10.731l1.304-3.26A.75.75 0 0112 7h3.25a.75.75 0 010 1.5h-2.742l-1.812 4.528a.75.75 0 01-1.392 0L6 4.77 4.696 8.03A.75.75 0 014 8.5H.75a.75.75 0 010-1.5h2.742l1.812-4.529A.75.75 0 016 2z"/></svg>
+            Valued at 618.71 USD
+          </div>
+        </section>
+        <section>
+          <div class="field">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"/></svg>
+            Today
+          </div>
+          <div class="field">
+            
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M13.03 8.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.47 9.28a.75.75 0 011.06-1.06l2.97 2.97V3.75a.75.75 0 011.5 0v7.44l2.97-2.97a.75.75 0 011.06 0z"/></svg>
+            
+            -21.68 (-3.50%)
+          </div>
+        </section>
+      </div>
+      <div class="stock-chart">
+        <div class="ct-chart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="480" height="160" class="ct-chart-line"><style>.ct-double-octave:after,
+.ct-major-eleventh:after,
+.ct-major-second:after,
+.ct-major-seventh:after,
+.ct-major-sixth:after,
+.ct-major-tenth:after,
+.ct-major-third:after,
+.ct-major-twelfth:after,
+.ct-minor-second:after,
+.ct-minor-seventh:after,
+.ct-minor-sixth:after,
+.ct-minor-third:after,
+.ct-octave:after,
+.ct-perfect-fifth:after,
+.ct-perfect-fourth:after,
+.ct-square:after {
+  content: "";
+  clear: both;
+}
+.ct-label {
+  fill: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4);
+  font-size: .75rem;
+  line-height: 1;
+}
+.ct-grid-background,
+.ct-line {
+  fill: none;
+}
+.ct-chart-bar .ct-label,
+.ct-chart-line .ct-label {
+  display: block;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.ct-chart-donut .ct-label,
+.ct-chart-pie .ct-label {
+  dominant-baseline: central;
+}
+.ct-label.ct-horizontal.ct-start {
+  -webkit-box-align: flex-end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  text-anchor: start;
+}
+.ct-label.ct-horizontal.ct-end {
+  -webkit-box-align: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  text-anchor: start;
+}
+.ct-label.ct-vertical.ct-start {
+  -webkit-box-align: flex-end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: flex-end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+  text-anchor: end;
+}
+.ct-label.ct-vertical.ct-end {
+  -webkit-box-align: flex-end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  text-anchor: start;
+}
+.ct-chart-bar .ct-label.ct-horizontal.ct-start {
+  -webkit-box-align: flex-end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  text-anchor: start;
+}
+.ct-chart-bar .ct-label.ct-horizontal.ct-end {
+  -webkit-box-align: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  text-anchor: start;
+}
+.ct-chart-bar.ct-horizontal-bars .ct-label.ct-horizontal.ct-start {
+  -webkit-box-align: flex-end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  text-anchor: start;
+}
+.ct-chart-bar.ct-horizontal-bars .ct-label.ct-horizontal.ct-end {
+  -webkit-box-align: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  text-anchor: start;
+}
+.ct-chart-bar.ct-horizontal-bars .ct-label.ct-vertical.ct-start {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: flex-end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+  text-anchor: end;
+}
+.ct-chart-bar.ct-horizontal-bars .ct-label.ct-vertical.ct-end {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  text-anchor: end;
+}
+.ct-grid {
+  stroke: rgba(0, 0, 0, 0.2);
+  stroke-width: 1px;
+  stroke-dasharray: 2px;
+}
+.ct-point {
+  stroke-width: 10px;
+  stroke-linecap: round;
+}
+.ct-line {
+  stroke-width: 4px;
+}
+.ct-area {
+  stroke: none;
+  fill-opacity: 0.1;
+}
+.ct-bar {
+  fill: none;
+  stroke-width: 10px;
+}
+.ct-slice-donut {
+  fill: none;
+  stroke-width: 60px;
+}
+.ct-series-a .ct-bar,
+.ct-series-a .ct-line,
+.ct-series-a .ct-point,
+.ct-series-a .ct-slice-donut {
+  stroke: #d70206;
+}
+.ct-series-a .ct-area,
+.ct-series-a .ct-slice-donut-solid,
+.ct-series-a .ct-slice-pie {
+  fill: #d70206;
+}
+.ct-series-b .ct-bar,
+.ct-series-b .ct-line,
+.ct-series-b .ct-point,
+.ct-series-b .ct-slice-donut {
+  stroke: #f05b4f;
+}
+.ct-series-b .ct-area,
+.ct-series-b .ct-slice-donut-solid,
+.ct-series-b .ct-slice-pie {
+  fill: #f05b4f;
+}
+.ct-series-c .ct-bar,
+.ct-series-c .ct-line,
+.ct-series-c .ct-point,
+.ct-series-c .ct-slice-donut {
+  stroke: #f4c63d;
+}
+.ct-series-c .ct-area,
+.ct-series-c .ct-slice-donut-solid,
+.ct-series-c .ct-slice-pie {
+  fill: #f4c63d;
+}
+.ct-series-d .ct-bar,
+.ct-series-d .ct-line,
+.ct-series-d .ct-point,
+.ct-series-d .ct-slice-donut {
+  stroke: #d17905;
+}
+.ct-series-d .ct-area,
+.ct-series-d .ct-slice-donut-solid,
+.ct-series-d .ct-slice-pie {
+  fill: #d17905;
+}
+.ct-series-e .ct-bar,
+.ct-series-e .ct-line,
+.ct-series-e .ct-point,
+.ct-series-e .ct-slice-donut {
+  stroke: #453d3f;
+}
+.ct-series-e .ct-area,
+.ct-series-e .ct-slice-donut-solid,
+.ct-series-e .ct-slice-pie {
+  fill: #453d3f;
+}
+.ct-series-f .ct-bar,
+.ct-series-f .ct-line,
+.ct-series-f .ct-point,
+.ct-series-f .ct-slice-donut {
+  stroke: #59922b;
+}
+.ct-series-f .ct-area,
+.ct-series-f .ct-slice-donut-solid,
+.ct-series-f .ct-slice-pie {
+  fill: #59922b;
+}
+.ct-series-g .ct-bar,
+.ct-series-g .ct-line,
+.ct-series-g .ct-point,
+.ct-series-g .ct-slice-donut {
+  stroke: #0544d3;
+}
+.ct-series-g .ct-area,
+.ct-series-g .ct-slice-donut-solid,
+.ct-series-g .ct-slice-pie {
+  fill: #0544d3;
+}
+.ct-series-h .ct-bar,
+.ct-series-h .ct-line,
+.ct-series-h .ct-point,
+.ct-series-h .ct-slice-donut {
+  stroke: #6b0392;
+}
+.ct-series-h .ct-area,
+.ct-series-h .ct-slice-donut-solid,
+.ct-series-h .ct-slice-pie {
+  fill: #6b0392;
+}
+.ct-series-i .ct-bar,
+.ct-series-i .ct-line,
+.ct-series-i .ct-point,
+.ct-series-i .ct-slice-donut {
+  stroke: #f05b4f;
+}
+.ct-series-i .ct-area,
+.ct-series-i .ct-slice-donut-solid,
+.ct-series-i .ct-slice-pie {
+  fill: #f05b4f;
+}
+.ct-series-j .ct-bar,
+.ct-series-j .ct-line,
+.ct-series-j .ct-point,
+.ct-series-j .ct-slice-donut {
+  stroke: #dda458;
+}
+.ct-series-j .ct-area,
+.ct-series-j .ct-slice-donut-solid,
+.ct-series-j .ct-slice-pie {
+  fill: #dda458;
+}
+.ct-series-k .ct-bar,
+.ct-series-k .ct-line,
+.ct-series-k .ct-point,
+.ct-series-k .ct-slice-donut {
+  stroke: #eacf7d;
+}
+.ct-series-k .ct-area,
+.ct-series-k .ct-slice-donut-solid,
+.ct-series-k .ct-slice-pie {
+  fill: #eacf7d;
+}
+.ct-series-l .ct-bar,
+.ct-series-l .ct-line,
+.ct-series-l .ct-point,
+.ct-series-l .ct-slice-donut {
+  stroke: #86797d;
+}
+.ct-series-l .ct-area,
+.ct-series-l .ct-slice-donut-solid,
+.ct-series-l .ct-slice-pie {
+  fill: #86797d;
+}
+.ct-series-m .ct-bar,
+.ct-series-m .ct-line,
+.ct-series-m .ct-point,
+.ct-series-m .ct-slice-donut {
+  stroke: #b2c326;
+}
+.ct-series-m .ct-area,
+.ct-series-m .ct-slice-donut-solid,
+.ct-series-m .ct-slice-pie {
+  fill: #b2c326;
+}
+.ct-series-n .ct-bar,
+.ct-series-n .ct-line,
+.ct-series-n .ct-point,
+.ct-series-n .ct-slice-donut {
+  stroke: #6188e2;
+}
+.ct-series-n .ct-area,
+.ct-series-n .ct-slice-donut-solid,
+.ct-series-n .ct-slice-pie {
+  fill: #6188e2;
+}
+.ct-series-o .ct-bar,
+.ct-series-o .ct-line,
+.ct-series-o .ct-point,
+.ct-series-o .ct-slice-donut {
+  stroke: #a748ca;
+}
+.ct-series-o .ct-area,
+.ct-series-o .ct-slice-donut-solid,
+.ct-series-o .ct-slice-pie {
+  fill: #a748ca;
+}
+.ct-square {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-square:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 100%;
+}
+.ct-square:after {
+  display: table;
+}
+.ct-square &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-minor-second {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-minor-second:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 93.75%;
+}
+.ct-minor-second:after {
+  display: table;
+}
+.ct-minor-second &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-major-second {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-major-second:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 88.88888889%;
+}
+.ct-major-second:after {
+  display: table;
+}
+.ct-major-second &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-minor-third {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-minor-third:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 83.33333333%;
+}
+.ct-minor-third:after {
+  display: table;
+}
+.ct-minor-third &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-major-third {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-major-third:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 80%;
+}
+.ct-major-third:after {
+  display: table;
+}
+.ct-major-third &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-perfect-fourth {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-perfect-fourth:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 75%;
+}
+.ct-perfect-fourth:after {
+  display: table;
+}
+.ct-perfect-fourth &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-perfect-fifth {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-perfect-fifth:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 66.66666667%;
+}
+.ct-perfect-fifth:after {
+  display: table;
+}
+.ct-perfect-fifth &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-minor-sixth {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-minor-sixth:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 62.5%;
+}
+.ct-minor-sixth:after {
+  display: table;
+}
+.ct-minor-sixth &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-golden-section {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-golden-section:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 61.80469716%;
+}
+.ct-golden-section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.ct-golden-section &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-major-sixth {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-major-sixth:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 60%;
+}
+.ct-major-sixth:after {
+  display: table;
+}
+.ct-major-sixth &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-minor-seventh {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-minor-seventh:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.ct-minor-seventh:after {
+  display: table;
+}
+.ct-minor-seventh &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-major-seventh {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-major-seventh:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 53.33333333%;
+}
+.ct-major-seventh:after {
+  display: table;
+}
+.ct-major-seventh &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-octave {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-octave:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 50%;
+}
+.ct-octave:after {
+  display: table;
+}
+.ct-octave &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-major-tenth {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-major-tenth:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 40%;
+}
+.ct-major-tenth:after {
+  display: table;
+}
+.ct-major-tenth &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-major-eleventh {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-major-eleventh:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 37.5%;
+}
+.ct-major-eleventh:after {
+  display: table;
+}
+.ct-major-eleventh &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-major-twelfth {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-major-twelfth:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 33.33333333%;
+}
+.ct-major-twelfth:after {
+  display: table;
+}
+.ct-major-twelfth &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-double-octave {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-double-octave:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 25%;
+}
+.ct-double-octave:after {
+  display: table;
+}
+.ct-double-octave &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-legend {
+  margin-top: 1em;
+}
+.ct-legend .ct-variable {
+  display: inline-block;
+  margin: 0 0.1em;
+}
+.ct-legend .ct-variable .ct-swatch {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 0.3em;
+  width: 0.5em;
+  height: 0.5em;
+  border: 1px solid white;
+  border-radius: 0.14em;
+}
+.ct-series-a .ct-bar,
+.ct-series-a .ct-line,
+.ct-series-a .ct-point,
+.ct-series-a .ct-slice-donut,
+.ct-series-a .ct-swatch {
+  background-color: skyblue;
+  stroke: skyblue;
+}
+.ct-series-a .ct-area,
+.ct-series-a .ct-slice-pie {
+  fill: skyblue;
+}
+.ct-series-b .ct-bar,
+.ct-series-b .ct-line,
+.ct-series-b .ct-point,
+.ct-series-b .ct-slice-donut,
+.ct-series-b .ct-swatch {
+  background-color: limegreen;
+  stroke: limegreen;
+}
+.ct-series-b .ct-area,
+.ct-series-b .ct-slice-pie {
+  fill: limegreen;
+}
+.ct-series-c .ct-bar,
+.ct-series-c .ct-line,
+.ct-series-c .ct-point,
+.ct-series-c .ct-slice-donut,
+.ct-series-c .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-c .ct-area,
+.ct-series-c .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-d .ct-bar,
+.ct-series-d .ct-line,
+.ct-series-d .ct-point,
+.ct-series-d .ct-slice-donut,
+.ct-series-d .ct-swatch {
+  background-color: gold;
+  stroke: gold;
+}
+.ct-series-d .ct-area,
+.ct-series-d .ct-slice-pie {
+  fill: gold;
+}
+.ct-series-e .ct-bar,
+.ct-series-e .ct-line,
+.ct-series-e .ct-point,
+.ct-series-e .ct-slice-donut,
+.ct-series-e .ct-swatch {
+  background-color: orange;
+  stroke: orange;
+}
+.ct-series-e .ct-area,
+.ct-series-e .ct-slice-pie {
+  fill: orange;
+}
+.ct-series-f .ct-bar,
+.ct-series-f .ct-line,
+.ct-series-f .ct-point,
+.ct-series-f .ct-slice-donut,
+.ct-series-f .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-f .ct-area,
+.ct-series-f .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-g .ct-bar,
+.ct-series-g .ct-line,
+.ct-series-g .ct-point,
+.ct-series-g .ct-slice-donut,
+.ct-series-g .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-g .ct-area,
+.ct-series-g .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-h .ct-bar,
+.ct-series-h .ct-line,
+.ct-series-h .ct-point,
+.ct-series-h .ct-slice-donut,
+.ct-series-h .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-h .ct-area,
+.ct-series-h .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-i .ct-bar,
+.ct-series-i .ct-line,
+.ct-series-i .ct-point,
+.ct-series-i .ct-slice-donut,
+.ct-series-i .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-i .ct-area,
+.ct-series-i .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-j .ct-bar,
+.ct-series-j .ct-line,
+.ct-series-j .ct-point,
+.ct-series-j .ct-slice-donut,
+.ct-series-j .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-j .ct-area,
+.ct-series-j .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-k .ct-bar,
+.ct-series-k .ct-line,
+.ct-series-k .ct-point,
+.ct-series-k .ct-slice-donut,
+.ct-series-k .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-k .ct-area,
+.ct-series-k .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-l .ct-bar,
+.ct-series-l .ct-line,
+.ct-series-l .ct-point,
+.ct-series-l .ct-slice-donut,
+.ct-series-l .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-l .ct-area,
+.ct-series-l .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-m .ct-bar,
+.ct-series-m .ct-line,
+.ct-series-m .ct-point,
+.ct-series-m .ct-slice-donut,
+.ct-series-m .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-m .ct-area,
+.ct-series-m .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-n .ct-bar,
+.ct-series-n .ct-line,
+.ct-series-n .ct-point,
+.ct-series-n .ct-slice-donut,
+.ct-series-n .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-n .ct-area,
+.ct-series-n .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-o .ct-bar,
+.ct-series-o .ct-line,
+.ct-series-o .ct-point,
+.ct-series-o .ct-slice-donut,
+.ct-series-o .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-o .ct-area,
+.ct-series-o .ct-slice-pie {
+  fill: indianred;
+}
+</style><g class="ct-grids"><line y1="125" y2="125" x1="50" x2="465" class="ct-grid ct-vertical"/><line y1="103" y2="103" x1="50" x2="465" class="ct-grid ct-vertical"/><line y1="81" y2="81" x1="50" x2="465" class="ct-grid ct-vertical"/><line y1="59" y2="59" x1="50" x2="465" class="ct-grid ct-vertical"/><line y1="37" y2="37" x1="50" x2="465" class="ct-grid ct-vertical"/><line y1="15" y2="15" x1="50" x2="465" class="ct-grid ct-vertical"/></g><g><g class="ct-series ct-series-a"><path d="M50,125L50,19.466C50.72,17.977,51.441,15,52.161,15C52.882,15,53.602,21.6,54.323,21.6C55.043,21.6,55.764,17.2,56.484,17.2C57.205,17.2,57.925,17.442,58.646,17.442C59.366,17.442,60.087,16.342,60.807,16.342C61.528,16.342,62.248,18.017,62.969,18.124C63.689,18.231,64.41,18.199,65.13,18.3C65.851,18.401,66.571,19.4,67.292,19.4C68.012,19.4,68.733,18.652,69.453,18.652C70.174,18.652,70.894,20.856,71.615,21.82C72.335,22.784,73.056,24.482,73.776,24.482C74.497,24.482,75.217,23.437,75.938,22.634C76.658,21.831,77.378,19.18,78.099,19.18C78.819,19.18,79.54,19.4,80.26,19.4C80.981,19.4,81.701,19.378,82.422,19.378C83.142,19.378,83.863,21.6,84.583,21.6C85.304,21.6,86.024,19.419,86.745,19.07C87.465,18.721,88.186,18.647,88.906,18.41C89.627,18.173,90.347,17.64,91.068,17.64C91.788,17.64,92.509,19.278,93.229,19.554C93.95,19.83,94.67,20.082,95.391,20.082C96.111,20.082,96.832,19.294,97.552,18.74C98.273,18.186,98.993,16.562,99.714,16.562C100.434,16.562,101.155,16.681,101.875,16.694C102.595,16.707,103.316,16.716,104.036,16.716C104.757,16.716,105.477,16.034,106.198,16.034C106.918,16.034,107.639,16.42,108.359,16.782C109.08,17.144,109.8,18.762,110.521,18.762C111.241,18.762,111.962,18.3,112.682,18.3C113.403,18.3,114.123,24.284,114.844,24.284C115.564,24.284,116.285,22.678,117.005,22.678C117.726,22.678,118.446,25.78,119.167,25.78C119.887,25.78,120.608,23.404,121.328,23.404C122.049,23.404,122.769,23.404,123.49,23.404C124.21,23.404,124.931,24.587,125.651,26.044C126.372,27.501,127.092,38.738,127.813,38.738C128.533,38.738,129.253,36.142,129.974,36.142C130.694,36.142,131.415,37.182,132.135,38.32C132.856,39.458,133.576,45.507,134.297,46.218C135.017,46.929,135.738,46.833,136.458,47.45C137.179,48.067,137.899,51.168,138.62,51.168C139.34,51.168,140.061,44.7,140.781,44.7C141.502,44.7,142.222,45.818,142.943,46.372C143.663,46.926,144.384,47.262,145.104,48.022C145.825,48.782,146.545,51.718,147.266,51.718C147.986,51.718,148.707,48.933,149.427,48C150.148,47.067,150.868,45.756,151.589,45.756C152.309,45.756,153.03,47.55,153.75,48.638C154.47,49.726,155.191,52.4,155.911,52.4C156.632,52.4,157.352,45.316,158.073,45.316C158.793,45.316,159.514,50.134,160.234,50.134C160.955,50.134,161.675,47.78,162.396,47.78C163.116,47.78,163.837,51.028,164.557,51.3C165.278,51.572,165.998,51.762,166.719,51.762C167.439,51.762,168.16,48.092,168.88,46.68C169.601,45.268,170.321,43.05,171.042,43.05C171.762,43.05,172.483,43.116,173.203,43.116C173.924,43.116,174.644,42.5,175.365,42.5C176.085,42.5,176.806,42.5,177.526,42.5C178.247,42.5,178.967,43.952,179.688,43.952C180.408,43.952,181.128,43.889,181.849,43.776C182.569,43.663,183.29,39.533,184.01,38.848C184.731,38.163,185.451,37.55,186.172,37.55C186.892,37.55,187.613,38.276,188.333,38.276C189.054,38.276,189.774,32.182,190.495,32.182C191.215,32.182,191.936,38.716,192.656,38.716C193.377,38.716,194.097,31.133,194.818,31.133C195.538,31.133,196.259,42.104,196.979,42.104C197.7,42.104,198.42,38.969,199.141,38.969C199.861,38.969,200.582,41.892,201.302,43.421C202.023,44.951,202.743,48.154,203.464,48.154C204.184,48.154,204.905,40.151,205.625,40.151C206.345,40.151,207.066,40.75,207.786,41.477C208.507,42.204,209.227,45.659,209.948,47.615C210.668,49.571,211.389,52.073,212.109,53.236C212.83,54.399,213.55,55.766,214.271,55.766C214.991,55.766,215.712,46.736,216.432,46.736C217.153,46.736,217.873,49.386,218.594,49.386C219.314,49.386,220.035,43.554,220.755,42.035C221.476,40.515,222.196,38.731,222.917,38.731C223.637,38.731,224.358,42.404,225.078,43.754C225.799,45.104,226.519,46.927,227.24,47.145C227.96,47.364,228.681,47.508,229.401,47.508C230.122,47.508,230.842,47.45,231.563,47.45C232.283,47.45,233.003,47.89,233.724,48.549C234.444,49.209,235.165,56.476,235.885,58.45C236.606,60.424,237.326,60.973,238.047,62.674C238.767,64.375,239.488,69.006,240.208,69.12C240.929,69.234,241.649,69.296,242.37,69.296C243.09,69.296,243.811,66.579,244.531,66.579C245.252,66.579,245.972,68.768,246.693,68.768C247.413,68.768,248.134,68.394,248.854,68.394C249.575,68.394,250.295,75.219,251.016,77.546C251.736,79.873,252.457,83.187,253.177,83.187C253.898,83.187,254.618,81.528,255.339,81.528C256.059,81.528,256.78,93.102,257.5,94.057C258.22,95.012,258.941,95.674,259.661,95.674C260.382,95.674,261.102,89.8,261.823,89.8C262.543,89.8,263.264,95.289,263.984,95.289C264.705,95.289,265.425,94.707,266.146,93.903C266.866,93.099,267.587,85.516,268.307,84.641C269.028,83.766,269.748,83.513,270.469,83.112C271.189,82.711,271.91,82.122,272.63,82.122C273.351,82.122,274.071,84.102,274.792,84.102C275.512,84.102,276.233,83.244,276.953,83.244C277.674,83.244,278.394,86.779,279.115,88.788C279.835,90.797,280.556,95.388,281.276,95.388C281.997,95.388,282.717,94.746,283.438,94.178C284.158,93.61,284.878,92.309,285.599,91.296C286.319,90.283,287.04,88.168,287.76,88.084C288.481,88,289.201,87.952,289.922,87.952C290.642,87.952,291.363,89.019,292.083,89.019C292.804,89.019,293.524,88.374,294.245,88.374C294.965,88.374,295.686,91.264,296.406,93.232C297.127,95.2,297.847,99.402,298.568,100.756C299.288,102.11,300.009,102.315,300.729,103.539C301.45,104.763,302.17,108.94,302.891,108.94C303.611,108.94,304.332,106.062,305.052,105.376C305.773,104.69,306.493,103.93,307.214,103.93C307.934,103.93,308.655,108.136,309.375,109.38C310.095,110.624,310.816,111.514,311.536,112.218C312.257,112.922,312.977,113.087,313.698,113.901C314.418,114.715,315.139,118.356,315.859,118.356C316.58,118.356,317.3,115.749,318.021,114.633C318.741,113.517,319.462,111.591,320.182,111.591C320.903,111.591,321.623,114.752,322.344,114.752C323.064,114.752,323.785,113.702,324.505,113.648C325.226,113.594,325.946,113.56,326.667,113.56C327.387,113.56,328.108,122.734,328.828,122.734C329.549,122.734,330.269,111.858,330.99,108.742C331.71,105.626,332.431,101.724,333.151,101.724C333.872,101.724,334.592,103.427,335.313,104.804C336.033,106.181,336.753,111.074,337.474,111.074C338.194,111.074,338.915,109.22,339.635,107.29C340.356,105.36,341.076,94.97,341.797,94.97C342.517,94.97,343.238,102.318,343.958,102.318C344.679,102.318,345.399,97.351,346.12,96.378C346.84,95.405,347.561,94.442,348.281,94.442C349.002,94.442,349.722,95.938,350.443,95.938C351.163,95.938,351.884,95.652,352.604,95.652C353.325,95.652,354.045,99.403,354.766,99.403C355.486,99.403,356.207,94.969,356.927,92.363C357.648,89.757,358.368,83.574,359.089,83.574C359.809,83.574,360.53,88.073,361.25,88.073C361.97,88.073,362.691,84.509,363.411,83.838C364.132,83.167,364.852,82.518,365.573,82.518C366.293,82.518,367.014,84.63,367.734,84.63C368.455,84.63,369.175,83.213,369.896,82.936C370.616,82.659,371.337,82.386,372.057,82.386C372.778,82.386,373.498,83.067,374.219,83.2C374.939,83.333,375.66,83.464,376.38,83.464C377.101,83.464,377.821,82.738,378.542,82.738C379.262,82.738,379.983,83.442,380.703,83.442C381.424,83.442,382.144,83.201,382.865,83.002C383.585,82.803,384.306,82.078,385.026,82.078C385.747,82.078,386.467,82.1,387.188,82.1C387.908,82.1,388.628,81.77,389.349,81.77C390.069,81.77,390.79,82.947,391.51,82.947C392.231,82.947,392.951,81.572,393.672,81.572C394.392,81.572,395.113,82.54,395.833,82.54C396.554,82.54,397.274,82.188,397.995,82.188C398.715,82.188,399.436,82.364,400.156,82.364C400.877,82.364,401.597,81.748,402.318,81.748C403.038,81.748,403.759,81.792,404.479,81.792C405.2,81.792,405.92,81.743,406.641,81.66C407.361,81.577,408.082,80.008,408.802,79.24C409.523,78.472,410.243,77.324,410.964,77.04C411.684,76.756,412.405,76.512,413.125,76.512C413.845,76.512,414.566,76.822,415.286,77.04C416.007,77.258,416.727,77.772,417.448,77.898C418.168,78.024,418.889,78.024,419.609,78.14C420.33,78.256,421.05,78.756,421.771,78.756C422.491,78.756,423.212,77.48,423.932,77.48C424.653,77.48,425.373,77.48,426.094,77.48C426.814,77.48,427.535,77.48,428.255,77.48C428.976,77.48,429.696,79.559,430.417,79.68C431.137,79.801,431.858,79.878,432.578,79.878C433.299,79.878,434.019,78.8,434.74,78.8C435.46,78.8,436.181,80.868,436.901,80.868C437.622,80.868,438.342,80.133,439.063,79.856C439.783,79.579,440.503,79.152,441.224,79.152C441.944,79.152,442.665,79.9,443.385,79.9C444.106,79.9,444.826,79.9,445.547,79.9C446.267,79.9,446.988,80.565,447.708,81C448.429,81.435,449.149,82.606,449.87,82.606C450.59,82.606,451.311,82.074,452.031,81.88C452.752,81.686,453.472,81.396,454.193,81.396C454.913,81.396,455.634,83.2,456.354,83.2C457.075,83.2,457.795,80.625,458.516,80.582C459.236,80.539,459.957,80.559,460.677,80.516C461.398,80.473,462.118,78.639,462.839,77.7L462.839,125Z" class="ct-area"/><path d="M50,19.466C50.72,17.977,51.441,15,52.161,15C52.882,15,53.602,21.6,54.323,21.6C55.043,21.6,55.764,17.2,56.484,17.2C57.205,17.2,57.925,17.442,58.646,17.442C59.366,17.442,60.087,16.342,60.807,16.342C61.528,16.342,62.248,18.017,62.969,18.124C63.689,18.231,64.41,18.199,65.13,18.3C65.851,18.401,66.571,19.4,67.292,19.4C68.012,19.4,68.733,18.652,69.453,18.652C70.174,18.652,70.894,20.856,71.615,21.82C72.335,22.784,73.056,24.482,73.776,24.482C74.497,24.482,75.217,23.437,75.938,22.634C76.658,21.831,77.378,19.18,78.099,19.18C78.819,19.18,79.54,19.4,80.26,19.4C80.981,19.4,81.701,19.378,82.422,19.378C83.142,19.378,83.863,21.6,84.583,21.6C85.304,21.6,86.024,19.419,86.745,19.07C87.465,18.721,88.186,18.647,88.906,18.41C89.627,18.173,90.347,17.64,91.068,17.64C91.788,17.64,92.509,19.278,93.229,19.554C93.95,19.83,94.67,20.082,95.391,20.082C96.111,20.082,96.832,19.294,97.552,18.74C98.273,18.186,98.993,16.562,99.714,16.562C100.434,16.562,101.155,16.681,101.875,16.694C102.595,16.707,103.316,16.716,104.036,16.716C104.757,16.716,105.477,16.034,106.198,16.034C106.918,16.034,107.639,16.42,108.359,16.782C109.08,17.144,109.8,18.762,110.521,18.762C111.241,18.762,111.962,18.3,112.682,18.3C113.403,18.3,114.123,24.284,114.844,24.284C115.564,24.284,116.285,22.678,117.005,22.678C117.726,22.678,118.446,25.78,119.167,25.78C119.887,25.78,120.608,23.404,121.328,23.404C122.049,23.404,122.769,23.404,123.49,23.404C124.21,23.404,124.931,24.587,125.651,26.044C126.372,27.501,127.092,38.738,127.813,38.738C128.533,38.738,129.253,36.142,129.974,36.142C130.694,36.142,131.415,37.182,132.135,38.32C132.856,39.458,133.576,45.507,134.297,46.218C135.017,46.929,135.738,46.833,136.458,47.45C137.179,48.067,137.899,51.168,138.62,51.168C139.34,51.168,140.061,44.7,140.781,44.7C141.502,44.7,142.222,45.818,142.943,46.372C143.663,46.926,144.384,47.262,145.104,48.022C145.825,48.782,146.545,51.718,147.266,51.718C147.986,51.718,148.707,48.933,149.427,48C150.148,47.067,150.868,45.756,151.589,45.756C152.309,45.756,153.03,47.55,153.75,48.638C154.47,49.726,155.191,52.4,155.911,52.4C156.632,52.4,157.352,45.316,158.073,45.316C158.793,45.316,159.514,50.134,160.234,50.134C160.955,50.134,161.675,47.78,162.396,47.78C163.116,47.78,163.837,51.028,164.557,51.3C165.278,51.572,165.998,51.762,166.719,51.762C167.439,51.762,168.16,48.092,168.88,46.68C169.601,45.268,170.321,43.05,171.042,43.05C171.762,43.05,172.483,43.116,173.203,43.116C173.924,43.116,174.644,42.5,175.365,42.5C176.085,42.5,176.806,42.5,177.526,42.5C178.247,42.5,178.967,43.952,179.688,43.952C180.408,43.952,181.128,43.889,181.849,43.776C182.569,43.663,183.29,39.533,184.01,38.848C184.731,38.163,185.451,37.55,186.172,37.55C186.892,37.55,187.613,38.276,188.333,38.276C189.054,38.276,189.774,32.182,190.495,32.182C191.215,32.182,191.936,38.716,192.656,38.716C193.377,38.716,194.097,31.133,194.818,31.133C195.538,31.133,196.259,42.104,196.979,42.104C197.7,42.104,198.42,38.969,199.141,38.969C199.861,38.969,200.582,41.892,201.302,43.421C202.023,44.951,202.743,48.154,203.464,48.154C204.184,48.154,204.905,40.151,205.625,40.151C206.345,40.151,207.066,40.75,207.786,41.477C208.507,42.204,209.227,45.659,209.948,47.615C210.668,49.571,211.389,52.073,212.109,53.236C212.83,54.399,213.55,55.766,214.271,55.766C214.991,55.766,215.712,46.736,216.432,46.736C217.153,46.736,217.873,49.386,218.594,49.386C219.314,49.386,220.035,43.554,220.755,42.035C221.476,40.515,222.196,38.731,222.917,38.731C223.637,38.731,224.358,42.404,225.078,43.754C225.799,45.104,226.519,46.927,227.24,47.145C227.96,47.364,228.681,47.508,229.401,47.508C230.122,47.508,230.842,47.45,231.563,47.45C232.283,47.45,233.003,47.89,233.724,48.549C234.444,49.209,235.165,56.476,235.885,58.45C236.606,60.424,237.326,60.973,238.047,62.674C238.767,64.375,239.488,69.006,240.208,69.12C240.929,69.234,241.649,69.296,242.37,69.296C243.09,69.296,243.811,66.579,244.531,66.579C245.252,66.579,245.972,68.768,246.693,68.768C247.413,68.768,248.134,68.394,248.854,68.394C249.575,68.394,250.295,75.219,251.016,77.546C251.736,79.873,252.457,83.187,253.177,83.187C253.898,83.187,254.618,81.528,255.339,81.528C256.059,81.528,256.78,93.102,257.5,94.057C258.22,95.012,258.941,95.674,259.661,95.674C260.382,95.674,261.102,89.8,261.823,89.8C262.543,89.8,263.264,95.289,263.984,95.289C264.705,95.289,265.425,94.707,266.146,93.903C266.866,93.099,267.587,85.516,268.307,84.641C269.028,83.766,269.748,83.513,270.469,83.112C271.189,82.711,271.91,82.122,272.63,82.122C273.351,82.122,274.071,84.102,274.792,84.102C275.512,84.102,276.233,83.244,276.953,83.244C277.674,83.244,278.394,86.779,279.115,88.788C279.835,90.797,280.556,95.388,281.276,95.388C281.997,95.388,282.717,94.746,283.438,94.178C284.158,93.61,284.878,92.309,285.599,91.296C286.319,90.283,287.04,88.168,287.76,88.084C288.481,88,289.201,87.952,289.922,87.952C290.642,87.952,291.363,89.019,292.083,89.019C292.804,89.019,293.524,88.374,294.245,88.374C294.965,88.374,295.686,91.264,296.406,93.232C297.127,95.2,297.847,99.402,298.568,100.756C299.288,102.11,300.009,102.315,300.729,103.539C301.45,104.763,302.17,108.94,302.891,108.94C303.611,108.94,304.332,106.062,305.052,105.376C305.773,104.69,306.493,103.93,307.214,103.93C307.934,103.93,308.655,108.136,309.375,109.38C310.095,110.624,310.816,111.514,311.536,112.218C312.257,112.922,312.977,113.087,313.698,113.901C314.418,114.715,315.139,118.356,315.859,118.356C316.58,118.356,317.3,115.749,318.021,114.633C318.741,113.517,319.462,111.591,320.182,111.591C320.903,111.591,321.623,114.752,322.344,114.752C323.064,114.752,323.785,113.702,324.505,113.648C325.226,113.594,325.946,113.56,326.667,113.56C327.387,113.56,328.108,122.734,328.828,122.734C329.549,122.734,330.269,111.858,330.99,108.742C331.71,105.626,332.431,101.724,333.151,101.724C333.872,101.724,334.592,103.427,335.313,104.804C336.033,106.181,336.753,111.074,337.474,111.074C338.194,111.074,338.915,109.22,339.635,107.29C340.356,105.36,341.076,94.97,341.797,94.97C342.517,94.97,343.238,102.318,343.958,102.318C344.679,102.318,345.399,97.351,346.12,96.378C346.84,95.405,347.561,94.442,348.281,94.442C349.002,94.442,349.722,95.938,350.443,95.938C351.163,95.938,351.884,95.652,352.604,95.652C353.325,95.652,354.045,99.403,354.766,99.403C355.486,99.403,356.207,94.969,356.927,92.363C357.648,89.757,358.368,83.574,359.089,83.574C359.809,83.574,360.53,88.073,361.25,88.073C361.97,88.073,362.691,84.509,363.411,83.838C364.132,83.167,364.852,82.518,365.573,82.518C366.293,82.518,367.014,84.63,367.734,84.63C368.455,84.63,369.175,83.213,369.896,82.936C370.616,82.659,371.337,82.386,372.057,82.386C372.778,82.386,373.498,83.067,374.219,83.2C374.939,83.333,375.66,83.464,376.38,83.464C377.101,83.464,377.821,82.738,378.542,82.738C379.262,82.738,379.983,83.442,380.703,83.442C381.424,83.442,382.144,83.201,382.865,83.002C383.585,82.803,384.306,82.078,385.026,82.078C385.747,82.078,386.467,82.1,387.188,82.1C387.908,82.1,388.628,81.77,389.349,81.77C390.069,81.77,390.79,82.947,391.51,82.947C392.231,82.947,392.951,81.572,393.672,81.572C394.392,81.572,395.113,82.54,395.833,82.54C396.554,82.54,397.274,82.188,397.995,82.188C398.715,82.188,399.436,82.364,400.156,82.364C400.877,82.364,401.597,81.748,402.318,81.748C403.038,81.748,403.759,81.792,404.479,81.792C405.2,81.792,405.92,81.743,406.641,81.66C407.361,81.577,408.082,80.008,408.802,79.24C409.523,78.472,410.243,77.324,410.964,77.04C411.684,76.756,412.405,76.512,413.125,76.512C413.845,76.512,414.566,76.822,415.286,77.04C416.007,77.258,416.727,77.772,417.448,77.898C418.168,78.024,418.889,78.024,419.609,78.14C420.33,78.256,421.05,78.756,421.771,78.756C422.491,78.756,423.212,77.48,423.932,77.48C424.653,77.48,425.373,77.48,426.094,77.48C426.814,77.48,427.535,77.48,428.255,77.48C428.976,77.48,429.696,79.559,430.417,79.68C431.137,79.801,431.858,79.878,432.578,79.878C433.299,79.878,434.019,78.8,434.74,78.8C435.46,78.8,436.181,80.868,436.901,80.868C437.622,80.868,438.342,80.133,439.063,79.856C439.783,79.579,440.503,79.152,441.224,79.152C441.944,79.152,442.665,79.9,443.385,79.9C444.106,79.9,444.826,79.9,445.547,79.9C446.267,79.9,446.988,80.565,447.708,81C448.429,81.435,449.149,82.606,449.87,82.606C450.59,82.606,451.311,82.074,452.031,81.88C452.752,81.686,453.472,81.396,454.193,81.396C454.913,81.396,455.634,83.2,456.354,83.2C457.075,83.2,457.795,80.625,458.516,80.582C459.236,80.539,459.957,80.559,460.677,80.516C461.398,80.473,462.118,78.639,462.839,77.7" class="ct-line"/></g></g><g class="ct-labels"><text x="50" y="145" width="2.1614583333333335" height="20" class="ct-label ct-horizontal ct-end">26/03, 08:00</text><text x="153.75" y="145" width="2.161458333333343" height="20" class="ct-label ct-horizontal ct-end">26/03, 12:00</text><text x="257.5" y="145" width="2.161458333333343" height="20" class="ct-label ct-horizontal ct-end">26/03, 16:00</text><text x="361.25" y="145" width="2.1614583333333712" height="20" class="ct-label ct-horizontal ct-end">26/03, 20:00</text><text y="125" x="40" height="22" width="30" class="ct-label ct-vertical ct-start">600</text><text y="103" x="40" height="22" width="30" class="ct-label ct-vertical ct-start">610</text><text y="81" x="40" height="22" width="30" class="ct-label ct-vertical ct-start">620</text><text y="59" x="40" height="22" width="30" class="ct-label ct-vertical ct-start">630</text><text y="37" x="40" height="22" width="30" class="ct-label ct-vertical ct-start">640</text><text y="15" x="40" height="30" width="30" class="ct-label ct-vertical ct-start">650</text></g></svg>
+  <div class="ct-legend">
+    
+  </div>
+</div>
+      </div>
+    
+  </section>
+
+      
+        
+
+      
+
+      
+      <div id="metrics-end"></div>
+
+    </div>
+  </foreignObject>
+
+</svg>
