@@ -12,7 +12,7 @@ jobs:
       - name: TSLA
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.stock.svg
+          filename: metrics.plugin.TSLA.svg
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           token: NOT_NEEDED
           plugin_stock: yes
