@@ -2,7 +2,6 @@ name: Stock Price
 on:
   # Schedule updates (each hour)
   schedule: [{ cron: "0 10 * * *" }]
-  timezone: Asia/Jakarta
   # Lines below let you run workflow manually and on each commit (optional)
   push: { branches: ["master", "main"] }
   workflow_dispatch:
