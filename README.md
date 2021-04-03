@@ -5,7 +5,7 @@
 <img alt="🦑" align="left" width="400"  src="https://github.com/afrizaloky/afrizaloky/blob/master/metrics.plugin.tweets.svg">
 <img alt="🦑" align="left" width="400"  src="https://github.com/afrizaloky/afrizaloky/blob/master/metrics.personal.anilist.svg">
 <img alt="🦑" align="left" width="400"  src="https://github.com/afrizaloky/afrizaloky/blob/master/metrics.plugin.TSLA.svg">
-<img alt="🦑" align="left" width="400"  src="https://github.com/afrizaloky/afrizaloky/blob/master/metrics.plugin.BBTN.svg">
+<img alt="🦑" align="left" width="400"  src="https://github.com/afrizaloky/afrizaloky/blob/master/metrics.plugin.BBCA.svg">
 
 ---
 
