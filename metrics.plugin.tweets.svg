@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="325" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="165" class="">
     <defs>
         <style/>
     </defs>
@@ -1026,33 +1026,17 @@
                             TwitterDev
                         </div>
                         <div class="tweet">
-                            Interested in how our engineers tackled the challenge? Get a peek under the hood over at the
-                            <span class="mention">
-                                @TwitterEng
+                            Introducing the manage blocks endpoints to the
+                            <span class="hashtag">
+                                #TwitterAPI
                             </span>
-                            blog 👇
-                            <br />
-                            <br />
-                            Link 🔗
-                            <span class="link">
-                                blog.twitter.com/engineering/en…
-                            </span>
-                            <div class="date">
-                                16:27 on 31/03/2021
-                            </div>
-                        </div>
-                        <div class="tweet">
-                            Over a year ago, we released the COVID-19 stream to help people build resources for the public good.
-                            <br />
-                            <br />
-                            Now we're sharing more about how people used this data to study everything from misinformation, to how attitudes about the virus evolved over time. 💡
-                            <br />
+                            v2. These endpoints are crucial for developers who want to help maintain and improve the health of the public conversation on Twitter.  Learn more
                             <br />
                             <span class="link">
-                                blog.twitter.com/developer/en_u…
+                                twittercommunity.com/t/announcing-m…
                             </span>
                             <div class="date">
-                                16:27 on 31/03/2021
+                                18:23 on 07/04/2021
                             </div>
                         </div>
                     </section>
