@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="52" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="269" class="">
     <defs>
         <style/>
     </defs>
@@ -97,8 +97,32 @@
     margin: 0 6px;
   }
 
-  .avatar.organization {
+  .organization.avatar {
     border-radius: 15%;
+  }
+
+  .organization.name {
+    white-space: nowrap;
+  }
+
+  .organization.contributions {
+    margin: 0 8px;
+    flex-wrap: wrap;
+  }
+
+  .contribution.organization {
+    display: flex;
+    border: 1px solid #959da5;
+    border-radius: 6px;
+    padding: 2px 6px;
+    padding-left: 0;
+    margin: 2px;
+    font-size: 12px;
+    background-color: #959da520;
+  }
+
+  .contribution.organization .avatar {
+    margin: 0 4px;
   }
 
 /* Commit calendar */
@@ -1022,17 +1046,1015 @@
                         <path d="M10.75 9a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5h-1.5z"/>
                         <path fill-rule="evenodd" d="M0 3.75C0 2.784.784 2 1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0114.25 14H1.75A1.75 1.75 0 010 12.25v-8.5zm14.5 0V5h-13V3.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25zm0 2.75h-13v5.75c0 .138.112.25.25.25h12.5a.25.25 0 00.25-.25V6.5z"/>
                     </svg>
-                    Stock prices
+                    Stock prices for BTC-USD
                 </h2>
-                <div class="row fill-width">
+                <div class="row">
                     <section>
-                        <div class="field error">
+                        <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                <path fill-rule="evenodd" d="M2.343 13.657A8 8 0 1113.657 2.343 8 8 0 012.343 13.657zM6.03 4.97a.75.75 0 00-1.06 1.06L6.94 8 4.97 9.97a.75.75 0 101.06 1.06L8 9.06l1.97 1.97a.75.75 0 101.06-1.06L9.06 8l1.97-1.97a.75.75 0 10-1.06-1.06L8 6.94 6.03 4.97z"/>
+                                <path fill-rule="evenodd" d="M1.5 14.25c0 .138.112.25.25.25H4v-1.25a.75.75 0 01.75-.75h2.5a.75.75 0 01.75.75v1.25h2.25a.25.25 0 00.25-.25V1.75a.25.25 0 00-.25-.25h-8.5a.25.25 0 00-.25.25v12.5zM1.75 16A1.75 1.75 0 010 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 00.25-.25V8.285a.25.25 0 00-.111-.208l-1.055-.703a.75.75 0 11.832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0114.25 16h-3.5a.75.75 0 01-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 01-.75-.75V14h-1v1.25a.75.75 0 01-.75.75h-3zM3 3.75A.75.75 0 013.75 3h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 3.75zM3.75 6a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM3 9.75A.75.75 0 013.75 9h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 9.75zM7.75 9a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM7 6.75A.75.75 0 017.75 6h.5a.75.75 0 010 1.5h-.5A.75.75 0 017 6.75zM7.75 3a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5z"/>
                             </svg>
-                            API returned 503
+                            Bitcoin USD
+                        </div>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M6 2a.75.75 0 01.696.471L10 10.731l1.304-3.26A.75.75 0 0112 7h3.25a.75.75 0 010 1.5h-2.742l-1.812 4.528a.75.75 0 01-1.392 0L6 4.77 4.696 8.03A.75.75 0 014 8.5H.75a.75.75 0 010-1.5h2.742l1.812-4.529A.75.75 0 016 2z"/>
+                            </svg>
+                            Valued at 60892.46 USD
                         </div>
                     </section>
+                    <section>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"/>
+                            </svg>
+                            Today
+                        </div>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M3.47 7.78a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 0l4.25 4.25a.75.75 0 01-1.06 1.06L9 4.81v7.44a.75.75 0 01-1.5 0V4.81L4.53 7.78a.75.75 0 01-1.06 0z"/>
+                            </svg>
+                            +2.27k USD (+3.72%)
+                        </div>
+                    </section>
+                </div>
+                <div class="stock-chart">
+                    <div class="ct-chart">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="480" height="160" class="ct-chart-line">
+                            <style>
+                                .ct-double-octave:after,
+.ct-major-eleventh:after,
+.ct-major-second:after,
+.ct-major-seventh:after,
+.ct-major-sixth:after,
+.ct-major-tenth:after,
+.ct-major-third:after,
+.ct-major-twelfth:after,
+.ct-minor-second:after,
+.ct-minor-seventh:after,
+.ct-minor-sixth:after,
+.ct-minor-third:after,
+.ct-octave:after,
+.ct-perfect-fifth:after,
+.ct-perfect-fourth:after,
+.ct-square:after {
+  content: "";
+  clear: both;
+}
+.ct-label {
+  fill: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4);
+  font-size: .75rem;
+  line-height: 1;
+}
+.ct-grid-background,
+.ct-line {
+  fill: none;
+}
+.ct-chart-bar .ct-label,
+.ct-chart-line .ct-label {
+  display: block;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.ct-chart-donut .ct-label,
+.ct-chart-pie .ct-label {
+  dominant-baseline: central;
+}
+.ct-label.ct-horizontal.ct-start {
+  -webkit-box-align: flex-end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  text-anchor: start;
+}
+.ct-label.ct-horizontal.ct-end {
+  -webkit-box-align: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  text-anchor: start;
+}
+.ct-label.ct-vertical.ct-start {
+  -webkit-box-align: flex-end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: flex-end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+  text-anchor: end;
+}
+.ct-label.ct-vertical.ct-end {
+  -webkit-box-align: flex-end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  text-anchor: start;
+}
+.ct-chart-bar .ct-label.ct-horizontal.ct-start {
+  -webkit-box-align: flex-end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  text-anchor: start;
+}
+.ct-chart-bar .ct-label.ct-horizontal.ct-end {
+  -webkit-box-align: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  text-anchor: start;
+}
+.ct-chart-bar.ct-horizontal-bars .ct-label.ct-horizontal.ct-start {
+  -webkit-box-align: flex-end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  text-anchor: start;
+}
+.ct-chart-bar.ct-horizontal-bars .ct-label.ct-horizontal.ct-end {
+  -webkit-box-align: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  text-anchor: start;
+}
+.ct-chart-bar.ct-horizontal-bars .ct-label.ct-vertical.ct-start {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: flex-end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+  text-anchor: end;
+}
+.ct-chart-bar.ct-horizontal-bars .ct-label.ct-vertical.ct-end {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: flex-start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  text-anchor: end;
+}
+.ct-grid {
+  stroke: rgba(0, 0, 0, 0.2);
+  stroke-width: 1px;
+  stroke-dasharray: 2px;
+}
+.ct-point {
+  stroke-width: 10px;
+  stroke-linecap: round;
+}
+.ct-line {
+  stroke-width: 4px;
+}
+.ct-area {
+  stroke: none;
+  fill-opacity: 0.1;
+}
+.ct-bar {
+  fill: none;
+  stroke-width: 10px;
+}
+.ct-slice-donut {
+  fill: none;
+  stroke-width: 60px;
+}
+.ct-series-a .ct-bar,
+.ct-series-a .ct-line,
+.ct-series-a .ct-point,
+.ct-series-a .ct-slice-donut {
+  stroke: #d70206;
+}
+.ct-series-a .ct-area,
+.ct-series-a .ct-slice-donut-solid,
+.ct-series-a .ct-slice-pie {
+  fill: #d70206;
+}
+.ct-series-b .ct-bar,
+.ct-series-b .ct-line,
+.ct-series-b .ct-point,
+.ct-series-b .ct-slice-donut {
+  stroke: #f05b4f;
+}
+.ct-series-b .ct-area,
+.ct-series-b .ct-slice-donut-solid,
+.ct-series-b .ct-slice-pie {
+  fill: #f05b4f;
+}
+.ct-series-c .ct-bar,
+.ct-series-c .ct-line,
+.ct-series-c .ct-point,
+.ct-series-c .ct-slice-donut {
+  stroke: #f4c63d;
+}
+.ct-series-c .ct-area,
+.ct-series-c .ct-slice-donut-solid,
+.ct-series-c .ct-slice-pie {
+  fill: #f4c63d;
+}
+.ct-series-d .ct-bar,
+.ct-series-d .ct-line,
+.ct-series-d .ct-point,
+.ct-series-d .ct-slice-donut {
+  stroke: #d17905;
+}
+.ct-series-d .ct-area,
+.ct-series-d .ct-slice-donut-solid,
+.ct-series-d .ct-slice-pie {
+  fill: #d17905;
+}
+.ct-series-e .ct-bar,
+.ct-series-e .ct-line,
+.ct-series-e .ct-point,
+.ct-series-e .ct-slice-donut {
+  stroke: #453d3f;
+}
+.ct-series-e .ct-area,
+.ct-series-e .ct-slice-donut-solid,
+.ct-series-e .ct-slice-pie {
+  fill: #453d3f;
+}
+.ct-series-f .ct-bar,
+.ct-series-f .ct-line,
+.ct-series-f .ct-point,
+.ct-series-f .ct-slice-donut {
+  stroke: #59922b;
+}
+.ct-series-f .ct-area,
+.ct-series-f .ct-slice-donut-solid,
+.ct-series-f .ct-slice-pie {
+  fill: #59922b;
+}
+.ct-series-g .ct-bar,
+.ct-series-g .ct-line,
+.ct-series-g .ct-point,
+.ct-series-g .ct-slice-donut {
+  stroke: #0544d3;
+}
+.ct-series-g .ct-area,
+.ct-series-g .ct-slice-donut-solid,
+.ct-series-g .ct-slice-pie {
+  fill: #0544d3;
+}
+.ct-series-h .ct-bar,
+.ct-series-h .ct-line,
+.ct-series-h .ct-point,
+.ct-series-h .ct-slice-donut {
+  stroke: #6b0392;
+}
+.ct-series-h .ct-area,
+.ct-series-h .ct-slice-donut-solid,
+.ct-series-h .ct-slice-pie {
+  fill: #6b0392;
+}
+.ct-series-i .ct-bar,
+.ct-series-i .ct-line,
+.ct-series-i .ct-point,
+.ct-series-i .ct-slice-donut {
+  stroke: #f05b4f;
+}
+.ct-series-i .ct-area,
+.ct-series-i .ct-slice-donut-solid,
+.ct-series-i .ct-slice-pie {
+  fill: #f05b4f;
+}
+.ct-series-j .ct-bar,
+.ct-series-j .ct-line,
+.ct-series-j .ct-point,
+.ct-series-j .ct-slice-donut {
+  stroke: #dda458;
+}
+.ct-series-j .ct-area,
+.ct-series-j .ct-slice-donut-solid,
+.ct-series-j .ct-slice-pie {
+  fill: #dda458;
+}
+.ct-series-k .ct-bar,
+.ct-series-k .ct-line,
+.ct-series-k .ct-point,
+.ct-series-k .ct-slice-donut {
+  stroke: #eacf7d;
+}
+.ct-series-k .ct-area,
+.ct-series-k .ct-slice-donut-solid,
+.ct-series-k .ct-slice-pie {
+  fill: #eacf7d;
+}
+.ct-series-l .ct-bar,
+.ct-series-l .ct-line,
+.ct-series-l .ct-point,
+.ct-series-l .ct-slice-donut {
+  stroke: #86797d;
+}
+.ct-series-l .ct-area,
+.ct-series-l .ct-slice-donut-solid,
+.ct-series-l .ct-slice-pie {
+  fill: #86797d;
+}
+.ct-series-m .ct-bar,
+.ct-series-m .ct-line,
+.ct-series-m .ct-point,
+.ct-series-m .ct-slice-donut {
+  stroke: #b2c326;
+}
+.ct-series-m .ct-area,
+.ct-series-m .ct-slice-donut-solid,
+.ct-series-m .ct-slice-pie {
+  fill: #b2c326;
+}
+.ct-series-n .ct-bar,
+.ct-series-n .ct-line,
+.ct-series-n .ct-point,
+.ct-series-n .ct-slice-donut {
+  stroke: #6188e2;
+}
+.ct-series-n .ct-area,
+.ct-series-n .ct-slice-donut-solid,
+.ct-series-n .ct-slice-pie {
+  fill: #6188e2;
+}
+.ct-series-o .ct-bar,
+.ct-series-o .ct-line,
+.ct-series-o .ct-point,
+.ct-series-o .ct-slice-donut {
+  stroke: #a748ca;
+}
+.ct-series-o .ct-area,
+.ct-series-o .ct-slice-donut-solid,
+.ct-series-o .ct-slice-pie {
+  fill: #a748ca;
+}
+.ct-square {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-square:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 100%;
+}
+.ct-square:after {
+  display: table;
+}
+.ct-square &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-minor-second {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-minor-second:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 93.75%;
+}
+.ct-minor-second:after {
+  display: table;
+}
+.ct-minor-second &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-major-second {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-major-second:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 88.88888889%;
+}
+.ct-major-second:after {
+  display: table;
+}
+.ct-major-second &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-minor-third {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-minor-third:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 83.33333333%;
+}
+.ct-minor-third:after {
+  display: table;
+}
+.ct-minor-third &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-major-third {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-major-third:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 80%;
+}
+.ct-major-third:after {
+  display: table;
+}
+.ct-major-third &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-perfect-fourth {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-perfect-fourth:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 75%;
+}
+.ct-perfect-fourth:after {
+  display: table;
+}
+.ct-perfect-fourth &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-perfect-fifth {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-perfect-fifth:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 66.66666667%;
+}
+.ct-perfect-fifth:after {
+  display: table;
+}
+.ct-perfect-fifth &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-minor-sixth {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-minor-sixth:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 62.5%;
+}
+.ct-minor-sixth:after {
+  display: table;
+}
+.ct-minor-sixth &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-golden-section {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-golden-section:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 61.80469716%;
+}
+.ct-golden-section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.ct-golden-section &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-major-sixth {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-major-sixth:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 60%;
+}
+.ct-major-sixth:after {
+  display: table;
+}
+.ct-major-sixth &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-minor-seventh {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-minor-seventh:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.ct-minor-seventh:after {
+  display: table;
+}
+.ct-minor-seventh &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-major-seventh {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-major-seventh:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 53.33333333%;
+}
+.ct-major-seventh:after {
+  display: table;
+}
+.ct-major-seventh &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-octave {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-octave:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 50%;
+}
+.ct-octave:after {
+  display: table;
+}
+.ct-octave &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-major-tenth {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-major-tenth:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 40%;
+}
+.ct-major-tenth:after {
+  display: table;
+}
+.ct-major-tenth &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-major-eleventh {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-major-eleventh:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 37.5%;
+}
+.ct-major-eleventh:after {
+  display: table;
+}
+.ct-major-eleventh &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-major-twelfth {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-major-twelfth:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 33.33333333%;
+}
+.ct-major-twelfth:after {
+  display: table;
+}
+.ct-major-twelfth &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-double-octave {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.ct-double-octave:before {
+  display: block;
+  float: left;
+  content: "";
+  width: 0;
+  height: 0;
+  padding-bottom: 25%;
+}
+.ct-double-octave:after {
+  display: table;
+}
+.ct-double-octave &gt; svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ct-legend {
+  margin-top: 1em;
+}
+.ct-legend .ct-variable {
+  display: inline-block;
+  margin: 0 0.1em;
+}
+.ct-legend .ct-variable .ct-swatch {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 0.3em;
+  width: 0.5em;
+  height: 0.5em;
+  border: 1px solid white;
+  border-radius: 0.14em;
+}
+.ct-series-a .ct-bar,
+.ct-series-a .ct-line,
+.ct-series-a .ct-point,
+.ct-series-a .ct-slice-donut,
+.ct-series-a .ct-swatch {
+  background-color: skyblue;
+  stroke: skyblue;
+}
+.ct-series-a .ct-area,
+.ct-series-a .ct-slice-pie {
+  fill: skyblue;
+}
+.ct-series-b .ct-bar,
+.ct-series-b .ct-line,
+.ct-series-b .ct-point,
+.ct-series-b .ct-slice-donut,
+.ct-series-b .ct-swatch {
+  background-color: limegreen;
+  stroke: limegreen;
+}
+.ct-series-b .ct-area,
+.ct-series-b .ct-slice-pie {
+  fill: limegreen;
+}
+.ct-series-c .ct-bar,
+.ct-series-c .ct-line,
+.ct-series-c .ct-point,
+.ct-series-c .ct-slice-donut,
+.ct-series-c .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-c .ct-area,
+.ct-series-c .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-d .ct-bar,
+.ct-series-d .ct-line,
+.ct-series-d .ct-point,
+.ct-series-d .ct-slice-donut,
+.ct-series-d .ct-swatch {
+  background-color: gold;
+  stroke: gold;
+}
+.ct-series-d .ct-area,
+.ct-series-d .ct-slice-pie {
+  fill: gold;
+}
+.ct-series-e .ct-bar,
+.ct-series-e .ct-line,
+.ct-series-e .ct-point,
+.ct-series-e .ct-slice-donut,
+.ct-series-e .ct-swatch {
+  background-color: orange;
+  stroke: orange;
+}
+.ct-series-e .ct-area,
+.ct-series-e .ct-slice-pie {
+  fill: orange;
+}
+.ct-series-f .ct-bar,
+.ct-series-f .ct-line,
+.ct-series-f .ct-point,
+.ct-series-f .ct-slice-donut,
+.ct-series-f .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-f .ct-area,
+.ct-series-f .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-g .ct-bar,
+.ct-series-g .ct-line,
+.ct-series-g .ct-point,
+.ct-series-g .ct-slice-donut,
+.ct-series-g .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-g .ct-area,
+.ct-series-g .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-h .ct-bar,
+.ct-series-h .ct-line,
+.ct-series-h .ct-point,
+.ct-series-h .ct-slice-donut,
+.ct-series-h .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-h .ct-area,
+.ct-series-h .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-i .ct-bar,
+.ct-series-i .ct-line,
+.ct-series-i .ct-point,
+.ct-series-i .ct-slice-donut,
+.ct-series-i .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-i .ct-area,
+.ct-series-i .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-j .ct-bar,
+.ct-series-j .ct-line,
+.ct-series-j .ct-point,
+.ct-series-j .ct-slice-donut,
+.ct-series-j .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-j .ct-area,
+.ct-series-j .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-k .ct-bar,
+.ct-series-k .ct-line,
+.ct-series-k .ct-point,
+.ct-series-k .ct-slice-donut,
+.ct-series-k .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-k .ct-area,
+.ct-series-k .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-l .ct-bar,
+.ct-series-l .ct-line,
+.ct-series-l .ct-point,
+.ct-series-l .ct-slice-donut,
+.ct-series-l .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-l .ct-area,
+.ct-series-l .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-m .ct-bar,
+.ct-series-m .ct-line,
+.ct-series-m .ct-point,
+.ct-series-m .ct-slice-donut,
+.ct-series-m .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-m .ct-area,
+.ct-series-m .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-n .ct-bar,
+.ct-series-n .ct-line,
+.ct-series-n .ct-point,
+.ct-series-n .ct-slice-donut,
+.ct-series-n .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-n .ct-area,
+.ct-series-n .ct-slice-pie {
+  fill: indianred;
+}
+.ct-series-o .ct-bar,
+.ct-series-o .ct-line,
+.ct-series-o .ct-point,
+.ct-series-o .ct-slice-donut,
+.ct-series-o .ct-swatch {
+  background-color: indianred;
+  stroke: indianred;
+}
+.ct-series-o .ct-area,
+.ct-series-o .ct-slice-pie {
+  fill: indianred;
+}
+                            </style>
+                            <g class="ct-grids">
+                                <line y1="125" y2="125" x1="50" x2="465" class="ct-grid ct-vertical"/>
+                                <line y1="97.5" y2="97.5" x1="50" x2="465" class="ct-grid ct-vertical"/>
+                                <line y1="70" y2="70" x1="50" x2="465" class="ct-grid ct-vertical"/>
+                                <line y1="42.5" y2="42.5" x1="50" x2="465" class="ct-grid ct-vertical"/>
+                                <line y1="15" y2="15" x1="50" x2="465" class="ct-grid ct-vertical"/>
+                            </g>
+                            <g>
+                                <g class="ct-series ct-series-a">
+                                    <path d="M50,125L50,120.952C51.032,121.306,52.065,121.73,53.097,122.014C54.129,122.299,55.162,122.727,56.194,122.727C57.226,122.727,58.259,122.628,59.291,122.504C60.323,122.379,61.356,121.669,62.388,121.358C63.42,121.046,64.453,120.571,65.485,120.571C66.517,120.571,67.55,121.263,68.582,121.263C69.614,121.263,70.647,119.643,71.679,119.643C72.711,119.643,73.744,119.786,74.776,119.786C75.808,119.786,76.841,117.286,77.873,117.286C78.905,117.286,79.938,117.6,80.97,117.763C82.002,117.925,83.035,118.2,84.067,118.262C85.1,118.325,86.132,118.378,87.164,118.378C88.197,118.378,89.229,117.637,90.261,117.048C91.294,116.459,92.326,114.414,93.358,114.414C94.391,114.414,95.423,116.072,96.455,116.338C97.488,116.603,98.52,116.594,99.552,116.84C100.585,117.087,101.617,117.662,102.649,118.237C103.682,118.813,104.714,119.841,105.746,120.501C106.779,121.162,107.811,121.868,108.843,122.262C109.876,122.657,110.908,123.154,111.94,123.154C112.973,123.154,114.005,120.379,115.037,120.379C116.07,120.379,117.102,120.395,118.134,120.395C119.167,120.395,120.199,119.694,121.231,119.157C122.264,118.621,123.296,116.855,124.328,116.855C125.361,116.855,126.393,117.839,127.425,117.839C128.458,117.839,129.49,116.626,130.522,116.185C131.555,115.744,132.587,115.083,133.619,115.083C134.652,115.083,135.684,115.436,136.716,115.782C137.749,116.128,138.781,117.792,139.813,117.792C140.846,117.792,141.878,116.41,142.91,116.356C143.943,116.302,144.975,116.325,146.007,116.27C147.04,116.215,148.072,114.574,149.104,113.973C150.137,113.371,151.169,112.74,152.201,112.488C153.234,112.236,154.266,112.214,155.299,111.981C156.331,111.748,157.363,111.393,158.396,110.857C159.428,110.32,160.46,108.026,161.493,108.026C162.525,108.026,163.557,108.904,164.59,109.382C165.622,109.86,166.654,110.576,167.687,110.904C168.719,111.232,169.751,111.408,170.784,111.63C171.816,111.853,172.848,112.246,173.881,112.246C174.913,112.246,175.945,112.139,176.978,111.958C178.01,111.777,179.042,107.178,180.075,107.178C181.107,107.178,182.139,108.906,183.172,109.158C184.204,109.411,185.236,109.626,186.269,109.626C187.301,109.626,188.333,109.522,189.366,109.381C190.398,109.239,191.43,108.42,192.463,107.815C193.495,107.211,194.527,106.871,195.56,105.663C196.592,104.456,197.624,94.734,198.657,94.231C199.689,93.729,200.721,93.424,201.754,93.424C202.786,93.424,203.818,97.163,204.851,97.163C205.883,97.163,206.915,92.816,207.948,92.816C208.98,92.816,210.012,96.125,211.045,96.125C212.077,96.125,213.109,95.335,214.142,95.335C215.174,95.335,216.206,95.5,217.239,95.5C218.271,95.5,219.303,94.881,220.336,94.881C221.368,94.881,222.4,95.391,223.433,95.391C224.465,95.391,225.498,94.561,226.53,94.037C227.562,93.513,228.595,92.301,229.627,92.163C230.659,92.026,231.692,92.082,232.724,91.932C233.756,91.782,234.789,85.134,235.821,84.592C236.853,84.049,237.886,84.228,238.918,83.676C239.95,83.124,240.983,77.574,242.015,75.053C243.047,72.531,244.08,71.568,245.112,68.317C246.144,65.066,247.177,51.708,248.209,50.65C249.241,49.592,250.274,48.906,251.306,48.906C252.338,48.906,253.371,54.152,254.403,54.152C255.435,54.152,256.468,53.252,257.5,53.252C258.532,53.252,259.565,58.364,260.597,58.364C261.629,58.364,262.662,52.552,263.694,51.749C264.726,50.946,265.759,51.055,266.791,50.277C267.823,49.499,268.856,45.565,269.888,44.634C270.92,43.704,271.953,43.588,272.985,42.779C274.017,41.97,275.05,40.392,276.082,39.27C277.114,38.148,278.147,36.037,279.179,36.037C280.211,36.037,281.244,39.89,282.276,40.919C283.308,41.948,284.341,43.175,285.373,43.175C286.405,43.175,287.438,41.948,288.47,41.948C289.502,41.948,290.535,44.543,291.567,45.805C292.6,47.068,293.632,49.524,294.664,49.524C295.697,49.524,296.729,47.605,297.761,46.671C298.794,45.737,299.826,44.64,300.858,43.918C301.891,43.195,302.923,42.13,303.955,42.13C304.988,42.13,306.02,44.505,307.052,44.505C308.085,44.505,309.117,42.521,310.149,42.521C311.182,42.521,312.214,46.132,313.246,47.047C314.279,47.961,315.311,49.014,316.343,49.014C317.376,49.014,318.408,48.772,319.44,48.772C320.473,48.772,321.505,53.291,322.537,53.291C323.57,53.291,324.602,53.189,325.634,53.037C326.667,52.885,327.699,51.549,328.731,50.779C329.764,50.01,330.796,48.419,331.828,48.419C332.861,48.419,333.893,48.775,334.925,49.076C335.958,49.377,336.99,50.517,338.022,50.517C339.055,50.517,340.087,50.422,341.119,50.422C342.152,50.422,343.184,50.582,344.216,50.842C345.249,51.101,346.281,56.129,347.313,56.129C348.346,56.129,349.378,54.246,350.41,53.024C351.443,51.802,352.475,49.873,353.507,48.547C354.54,47.22,355.572,44.964,356.604,44.964C357.637,44.964,358.669,46.156,359.701,47.163C360.734,48.17,361.766,51.1,362.799,51.991C363.831,52.882,364.863,53.84,365.896,53.84C366.928,53.84,367.96,53.396,368.993,53.219C370.025,53.043,371.057,52.759,372.09,52.759C373.122,52.759,374.154,52.894,375.187,52.894C376.219,52.894,377.251,52.766,378.284,52.766C379.316,52.766,380.348,53.817,381.381,53.817C382.413,53.817,383.445,48.809,384.478,48.696C385.51,48.583,386.542,48.63,387.575,48.521C388.607,48.412,389.639,46.12,390.672,46.12C391.704,46.12,392.736,46.548,393.769,46.548C394.801,46.548,395.833,45.594,396.866,45.594C397.898,45.594,398.93,47.197,399.963,47.516C400.995,47.835,402.027,47.813,403.06,48.153C404.092,48.493,405.124,50.504,406.157,50.715C407.189,50.926,408.221,51.076,409.254,51.076C410.286,51.076,411.318,50.347,412.351,50.347C413.383,50.347,414.415,53.166,415.448,53.166C416.48,53.166,417.512,51.794,418.545,51.794C419.577,51.794,420.609,52.39,421.642,52.39C422.674,52.39,423.706,51.236,424.739,50.775C425.771,50.315,426.803,49.953,427.836,49.567C428.868,49.182,429.9,48.744,430.933,48.458C431.965,48.172,432.998,47.758,434.03,47.758C435.062,47.758,436.095,49.402,437.127,49.402C438.159,49.402,439.192,47.695,440.224,47.695C441.256,47.695,442.289,48.562,443.321,48.562C444.353,48.562,445.386,48.006,446.418,47.647C447.45,47.288,448.483,46.668,449.515,46.341C450.547,46.013,451.58,45.555,452.612,45.555C453.644,45.555,454.677,45.653,455.709,45.653C456.741,45.653,457.774,45.056,458.806,45.056C459.838,45.056,460.871,45.324,461.903,45.457L461.903,125Z" class="ct-area"/>
+                                    <path d="M50,120.952C51.032,121.306,52.065,121.73,53.097,122.014C54.129,122.299,55.162,122.727,56.194,122.727C57.226,122.727,58.259,122.628,59.291,122.504C60.323,122.379,61.356,121.669,62.388,121.358C63.42,121.046,64.453,120.571,65.485,120.571C66.517,120.571,67.55,121.263,68.582,121.263C69.614,121.263,70.647,119.643,71.679,119.643C72.711,119.643,73.744,119.786,74.776,119.786C75.808,119.786,76.841,117.286,77.873,117.286C78.905,117.286,79.938,117.6,80.97,117.763C82.002,117.925,83.035,118.2,84.067,118.262C85.1,118.325,86.132,118.378,87.164,118.378C88.197,118.378,89.229,117.637,90.261,117.048C91.294,116.459,92.326,114.414,93.358,114.414C94.391,114.414,95.423,116.072,96.455,116.338C97.488,116.603,98.52,116.594,99.552,116.84C100.585,117.087,101.617,117.662,102.649,118.237C103.682,118.813,104.714,119.841,105.746,120.501C106.779,121.162,107.811,121.868,108.843,122.262C109.876,122.657,110.908,123.154,111.94,123.154C112.973,123.154,114.005,120.379,115.037,120.379C116.07,120.379,117.102,120.395,118.134,120.395C119.167,120.395,120.199,119.694,121.231,119.157C122.264,118.621,123.296,116.855,124.328,116.855C125.361,116.855,126.393,117.839,127.425,117.839C128.458,117.839,129.49,116.626,130.522,116.185C131.555,115.744,132.587,115.083,133.619,115.083C134.652,115.083,135.684,115.436,136.716,115.782C137.749,116.128,138.781,117.792,139.813,117.792C140.846,117.792,141.878,116.41,142.91,116.356C143.943,116.302,144.975,116.325,146.007,116.27C147.04,116.215,148.072,114.574,149.104,113.973C150.137,113.371,151.169,112.74,152.201,112.488C153.234,112.236,154.266,112.214,155.299,111.981C156.331,111.748,157.363,111.393,158.396,110.857C159.428,110.32,160.46,108.026,161.493,108.026C162.525,108.026,163.557,108.904,164.59,109.382C165.622,109.86,166.654,110.576,167.687,110.904C168.719,111.232,169.751,111.408,170.784,111.63C171.816,111.853,172.848,112.246,173.881,112.246C174.913,112.246,175.945,112.139,176.978,111.958C178.01,111.777,179.042,107.178,180.075,107.178C181.107,107.178,182.139,108.906,183.172,109.158C184.204,109.411,185.236,109.626,186.269,109.626C187.301,109.626,188.333,109.522,189.366,109.381C190.398,109.239,191.43,108.42,192.463,107.815C193.495,107.211,194.527,106.871,195.56,105.663C196.592,104.456,197.624,94.734,198.657,94.231C199.689,93.729,200.721,93.424,201.754,93.424C202.786,93.424,203.818,97.163,204.851,97.163C205.883,97.163,206.915,92.816,207.948,92.816C208.98,92.816,210.012,96.125,211.045,96.125C212.077,96.125,213.109,95.335,214.142,95.335C215.174,95.335,216.206,95.5,217.239,95.5C218.271,95.5,219.303,94.881,220.336,94.881C221.368,94.881,222.4,95.391,223.433,95.391C224.465,95.391,225.498,94.561,226.53,94.037C227.562,93.513,228.595,92.301,229.627,92.163C230.659,92.026,231.692,92.082,232.724,91.932C233.756,91.782,234.789,85.134,235.821,84.592C236.853,84.049,237.886,84.228,238.918,83.676C239.95,83.124,240.983,77.574,242.015,75.053C243.047,72.531,244.08,71.568,245.112,68.317C246.144,65.066,247.177,51.708,248.209,50.65C249.241,49.592,250.274,48.906,251.306,48.906C252.338,48.906,253.371,54.152,254.403,54.152C255.435,54.152,256.468,53.252,257.5,53.252C258.532,53.252,259.565,58.364,260.597,58.364C261.629,58.364,262.662,52.552,263.694,51.749C264.726,50.946,265.759,51.055,266.791,50.277C267.823,49.499,268.856,45.565,269.888,44.634C270.92,43.704,271.953,43.588,272.985,42.779C274.017,41.97,275.05,40.392,276.082,39.27C277.114,38.148,278.147,36.037,279.179,36.037C280.211,36.037,281.244,39.89,282.276,40.919C283.308,41.948,284.341,43.175,285.373,43.175C286.405,43.175,287.438,41.948,288.47,41.948C289.502,41.948,290.535,44.543,291.567,45.805C292.6,47.068,293.632,49.524,294.664,49.524C295.697,49.524,296.729,47.605,297.761,46.671C298.794,45.737,299.826,44.64,300.858,43.918C301.891,43.195,302.923,42.13,303.955,42.13C304.988,42.13,306.02,44.505,307.052,44.505C308.085,44.505,309.117,42.521,310.149,42.521C311.182,42.521,312.214,46.132,313.246,47.047C314.279,47.961,315.311,49.014,316.343,49.014C317.376,49.014,318.408,48.772,319.44,48.772C320.473,48.772,321.505,53.291,322.537,53.291C323.57,53.291,324.602,53.189,325.634,53.037C326.667,52.885,327.699,51.549,328.731,50.779C329.764,50.01,330.796,48.419,331.828,48.419C332.861,48.419,333.893,48.775,334.925,49.076C335.958,49.377,336.99,50.517,338.022,50.517C339.055,50.517,340.087,50.422,341.119,50.422C342.152,50.422,343.184,50.582,344.216,50.842C345.249,51.101,346.281,56.129,347.313,56.129C348.346,56.129,349.378,54.246,350.41,53.024C351.443,51.802,352.475,49.873,353.507,48.547C354.54,47.22,355.572,44.964,356.604,44.964C357.637,44.964,358.669,46.156,359.701,47.163C360.734,48.17,361.766,51.1,362.799,51.991C363.831,52.882,364.863,53.84,365.896,53.84C366.928,53.84,367.96,53.396,368.993,53.219C370.025,53.043,371.057,52.759,372.09,52.759C373.122,52.759,374.154,52.894,375.187,52.894C376.219,52.894,377.251,52.766,378.284,52.766C379.316,52.766,380.348,53.817,381.381,53.817C382.413,53.817,383.445,48.809,384.478,48.696C385.51,48.583,386.542,48.63,387.575,48.521C388.607,48.412,389.639,46.12,390.672,46.12C391.704,46.12,392.736,46.548,393.769,46.548C394.801,46.548,395.833,45.594,396.866,45.594C397.898,45.594,398.93,47.197,399.963,47.516C400.995,47.835,402.027,47.813,403.06,48.153C404.092,48.493,405.124,50.504,406.157,50.715C407.189,50.926,408.221,51.076,409.254,51.076C410.286,51.076,411.318,50.347,412.351,50.347C413.383,50.347,414.415,53.166,415.448,53.166C416.48,53.166,417.512,51.794,418.545,51.794C419.577,51.794,420.609,52.39,421.642,52.39C422.674,52.39,423.706,51.236,424.739,50.775C425.771,50.315,426.803,49.953,427.836,49.567C428.868,49.182,429.9,48.744,430.933,48.458C431.965,48.172,432.998,47.758,434.03,47.758C435.062,47.758,436.095,49.402,437.127,49.402C438.159,49.402,439.192,47.695,440.224,47.695C441.256,47.695,442.289,48.562,443.321,48.562C444.353,48.562,445.386,48.006,446.418,47.647C447.45,47.288,448.483,46.668,449.515,46.341C450.547,46.013,451.58,45.555,452.612,45.555C453.644,45.555,454.677,45.653,455.709,45.653C456.741,45.653,457.774,45.056,458.806,45.056C459.838,45.056,460.871,45.324,461.903,45.457" class="ct-line"/>
+                                </g>
+                            </g>
+                            <g class="ct-labels">
+                                <text x="50" y="145" width="3.0970149253731343" height="20" class="ct-label ct-horizontal ct-end">
+                                    09/04, 23:00
+                                </text>
+                                <text x="152.2014925373134" y="145" width="3.0970149253731307" height="20" class="ct-label ct-horizontal ct-end">
+                                    10/04, 01:45
+                                </text>
+                                <text x="254.40298507462686" y="145" width="3.097014925373145" height="20" class="ct-label ct-horizontal ct-end">
+                                    10/04, 04:30
+                                </text>
+                                <text x="356.6044776119403" y="145" width="3.0970149253731165" height="20" class="ct-label ct-horizontal ct-end">
+                                    10/04, 07:15
+                                </text>
+                                <text x="458.8059701492537" y="145" width="3.0970149253731734" height="20" class="ct-label ct-horizontal ct-end">
+                                    10/04, 10:00
+                                </text>
+                                <text y="125" x="40" height="27.5" width="30" class="ct-label ct-vertical ct-start">
+                                    58000
+                                </text>
+                                <text y="97.5" x="40" height="27.5" width="30" class="ct-label ct-vertical ct-start">
+                                    59000
+                                </text>
+                                <text y="70" x="40" height="27.5" width="30" class="ct-label ct-vertical ct-start">
+                                    60000
+                                </text>
+                                <text y="42.5" x="40" height="27.5" width="30" class="ct-label ct-vertical ct-start">
+                                    61000
+                                </text>
+                                <text y="15" x="40" height="30" width="30" class="ct-label ct-vertical ct-start">
+                                    62000
+                                </text>
+                            </g>
+                        </svg>
+                        <div class="ct-legend">
+                        </div>
+                    </div>
                 </div>
             </section>
             <div id="metrics-end"></div>
