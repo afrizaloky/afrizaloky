@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="199" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="291" class="">
     <defs>
         <style/>
     </defs>
@@ -1056,22 +1056,33 @@
                             TwitterDev
                         </div>
                         <div class="tweet">
-                            Join us next Thursday, April 22nd at 10 am PT for our next livestream 🚨
-                            <br />
-                            <br />
-                            Getting started with the
+                            Introducing the manage Likes endpoints to the
                             <span class="hashtag">
                                 #TwitterAPI
                             </span>
-                            v2 and the new Academic Research product track using the twarc2 library in Python
+                            v2. Liking Tweets is one of the core aspects of the Twitter experience. Developers can now use these endpoints to like or unlike a specified Tweet on behalf of an authenticated account.
                             <br />
                             <br />
-                            We will be live on Twitch
+                            <a href="https://t.co/VCWYEHN8Bf" class="link">
+                                twittercommunity.com/t/announcing-n…
+                            </a>
+                            <div class="date">
+                                17:18 on 22/04/2021
+                            </div>
+                        </div>
+                        <div class="tweet">
+                            We will be starting soon.
+                            <br />
+                            <br />
+                            Join us on
                             <a href="https://t.co/SQziibOD9P" class="link">
                                 twitch.tv/twitterdev
                             </a>
+                            <a href="https://t.co/kGGfrrh52a" class="link">
+                                twitter.com/TwitterDev/sta…
+                            </a>
                             <div class="date">
-                                17:18 on 15/04/2021
+                                16:33 on 22/04/2021
                             </div>
                         </div>
                     </section>
