@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="308" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="335" class="">
     <defs>
         <style/>
     </defs>
@@ -1159,7 +1159,7 @@
                 <div class="row">
                     <ul class="habits">
                         <li>Use spaces for indents</li>
-                        <li>Mostly push code around 02:00</li>
+                        <li>Mostly push code around 18:00</li>
                         <li>Mostly active on wednesday</li>
                     </ul>
                 </div>
@@ -1178,8 +1178,8 @@
               01
             </div>
                     <div class="entry">
-              <span class="value">2</span>
-              <div class="bar" style="height: 50px; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
+              <span class="value"></span>
+              <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
               02
             </div>
                     <div class="entry">
@@ -1324,8 +1324,8 @@
                 Fri
               </div>
                         <div class="entry">
-                <span class="value">2</span>
-                <div class="bar" style="height: 50px; background-color: var(--color-calendar-graph-day-L4-bg)"></div>
+                <span class="value"></span>
+                <div class="bar" style="height: 0px; background-color: var(--color-calendar-graph-day-L0-bg)"></div>
                 Sat
               </div>
                     </div>
