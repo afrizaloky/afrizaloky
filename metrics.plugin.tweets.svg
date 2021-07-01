@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="336" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="302" class="">
     <defs>
         <style/>
     </defs>
@@ -1169,14 +1169,14 @@
             
           </div>
                         <div class="tweet">
-                  Like to know what you're getting into before you commit? Us too.<br /><br />Announcing new Tweet counts endpoints to the  <span class="hashtag">#TwitterAPI</span>  v2 so that you can see Tweet volume before your search request. Learn more 👇<a href="https://t.co/5y2jVdfVgF" class="link">twittercommunity.com/t/introducing-…</a>
+                  Does unfollowing or blocking sometimes feel a bit too harsh? Consider muting instead.<br /><br />You can now build with the manage mutes endpoints on the  <span class="hashtag">#TwitterAPI</span>  v2 to give people more control over the content they see on Twitter. <a href="https://t.co/2hYlzsnLDC" class="link">twittercommunity.com/t/announcing-n…</a>
                   
-                  <div class="date">19:02 on 24/06/2021</div>
+                  <div class="date">17:28 on 30/06/2021</div>
                 </div>
                         <div class="tweet">
-                  Normalize disastrous extreme weather? We’d rather not. 😞 <br /><br />But according to climate change &amp; human behavior experts, that’s exactly what we're doing. <a href="https://t.co/rqsSN7Ambh" class="link">developer.twitter.com/en/community/s…</a> <br /><br />How would you  <span class="hashtag">#BuildWhatsNext</span>  for the future of our planet? <a href="https://t.co/9fEgBPgv5Y" class="link">pic.twitter.com/9fEgBPgv5Y</a>
+                  Broken connection? That shouldn’t stop data coming in with streaming endpoints. Starting with the Academic Research product track, you can now access two new reliability features: redundant connections and backfill. Learn more in our documentation: <a href="https://t.co/ZO6V0JT82E" class="link">twittercommunity.com/t/new-reliabil…</a>
                   
-                  <div class="date">21:16 on 23/06/2021</div>
+                  <div class="date">19:56 on 29/06/2021</div>
                 </div>
                     </section>
                 </div>
