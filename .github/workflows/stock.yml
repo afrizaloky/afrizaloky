@@ -22,7 +22,7 @@ jobs:
       - name: NEAR
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.TSLA.svg
+          filename: metrics.plugin.NEAR.svg
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           token: NOT_NEEDED
           plugin_stock: yes
