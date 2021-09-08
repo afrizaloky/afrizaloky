@@ -10,8 +10,6 @@
 
 ---
 
-**Now Playing** on Spotify
-<br>
-<a href="https://ghiscure.vercel.app/api/now-playing?open">
-    <img src="https://ghiscure.vercel.app/api/now-playing" width="512" height="64" alt="Now Playing">
-</a>
+| ***Now Playing***                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------ |
+| <a href="https://ghiscure.vercel.app/api/now-playing?open"><img src="https://ghiscure.vercel.app/api/now-playing" width="540" height="64"></a> |
