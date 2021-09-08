@@ -19,16 +19,6 @@ jobs:
           plugin_stock_token: ${{ secrets.STOCK_TOKEN }} # RapidAPI Yahoo Finance token
           plugin_stock_symbol: TSLA # Display Tesla stock price
           plugin_stock_duration: 1d # Display last day of market
-      - name: NEAR
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.NEAR.svg
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          token: NOT_NEEDED
-          plugin_stock: yes
-          plugin_stock_token: ${{ secrets.STOCK_TOKEN }} # RapidAPI Yahoo Finance token
-          plugin_stock_symbol: NEAR-USD # Display Tesla stock price
-          plugin_stock_duration: 1d # Display last day of market
       - name: BBCA
         uses: lowlighter/metrics@master
         with:
