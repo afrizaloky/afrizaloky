@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="60" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="257" class="">
     <defs>
         <style/>
     </defs>
-    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-fade{0%{opacity:0}to{opacity:1}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h2{margin:8px 0 2px;padding:0;color:#0366d6;font-weight:400;font-size:16px}h2 svg{fill:currentColor}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.field.error{color:#cb2431}.field.error svg{fill:#cb2431}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}#metrics-end,.fill-width{width:100%}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
+    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-fade{0%{opacity:0}to{opacity:1}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h2{margin:8px 0 2px;padding:0;color:#0366d6;font-weight:400;font-size:16px}h2 svg{fill:currentColor}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}.stargazers .chartist .ct-post{fill:rgba(127,127,127,.8)!important;color:rgba(127,127,127,.8)!important;font-size:9px;text-anchor:middle}.ct-chart{display:flex;margin-left:-12px}.ct-line{stroke-width:2px!important;stroke:#58a6ff!important}.ct-area{fill:#58a6ff!important}.ct-label{fill:rgba(127,127,127,.8)!important;color:rgba(127,127,127,.8)!important}.ct-label.ct-horizontal{text-anchor:middle!important}.ct-grid{stroke:rgba(127,127,127,.4)!important}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}#metrics-end{width:100%}.ct-label{font-size:.75rem;line-height:1}.ct-line{fill:none}.ct-chart-line .ct-label{display:block;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex}.ct-label.ct-horizontal.ct-end,.ct-label.ct-horizontal.ct-start{-webkit-box-align:flex-end;-webkit-align-items:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:flex-start;-webkit-justify-content:flex-start;-ms-flex-pack:flex-start;justify-content:flex-start;text-align:left;text-anchor:start}.ct-label.ct-horizontal.ct-end{-webkit-box-align:flex-start;-webkit-align-items:flex-start;-ms-flex-align:flex-start;align-items:flex-start}.ct-label.ct-vertical.ct-end,.ct-label.ct-vertical.ct-start{-webkit-box-align:flex-end;-webkit-align-items:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:flex-end;-webkit-justify-content:flex-end;-ms-flex-pack:flex-end;justify-content:flex-end;text-align:right;text-anchor:end}.ct-label.ct-vertical.ct-end{-webkit-box-pack:flex-start;-webkit-justify-content:flex-start;-ms-flex-pack:flex-start;justify-content:flex-start;text-align:left;text-anchor:start}.ct-grid{stroke-width:1px;stroke-dasharray:2px}.ct-line{}.ct-area{stroke:none;fill-opacity:.1}.ct-legend{margin-top:1em}.ct-series-a .ct-line{background-color:#87ceeb;stroke:#87ceeb}.ct-series-a .ct-area{fill:#87ceeb}</style>
     <style/>
     <foreignObject x="0" y="0" width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
@@ -12,17 +12,69 @@
                         <path d="M10.75 9a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5h-1.5z"/>
                         <path fill-rule="evenodd" d="M0 3.75C0 2.784.784 2 1.75 2h12.5c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0114.25 14H1.75A1.75 1.75 0 010 12.25v-8.5zm14.5 0V5h-13V3.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25zm0 2.75h-13v5.75c0 .138.112.25.25.25h12.5a.25.25 0 00.25-.25V6.5z"/>
                     </svg>
-                    Stock prices
+                    Stock prices for BBCA.JK
                 </h2>
-                <div class="row fill-width">
+                <div class="row">
                     <section>
-                        <div class="field error">
+                        <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                <path fill-rule="evenodd" d="M2.343 13.657A8 8 0 1113.657 2.343 8 8 0 012.343 13.657zM6.03 4.97a.75.75 0 00-1.06 1.06L6.94 8 4.97 9.97a.75.75 0 101.06 1.06L8 9.06l1.97 1.97a.75.75 0 101.06-1.06L9.06 8l1.97-1.97a.75.75 0 10-1.06-1.06L8 6.94 6.03 4.97z"/>
+                                <path fill-rule="evenodd" d="M1.5 14.25c0 .138.112.25.25.25H4v-1.25a.75.75 0 01.75-.75h2.5a.75.75 0 01.75.75v1.25h2.25a.25.25 0 00.25-.25V1.75a.25.25 0 00-.25-.25h-8.5a.25.25 0 00-.25.25v12.5zM1.75 16A1.75 1.75 0 010 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 00.25-.25V8.285a.25.25 0 00-.111-.208l-1.055-.703a.75.75 0 11.832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0114.25 16h-3.5a.75.75 0 01-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 01-.75-.75V14h-1v1.25a.75.75 0 01-.75.75h-3zM3 3.75A.75.75 0 013.75 3h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 3.75zM3.75 6a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM3 9.75A.75.75 0 013.75 9h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 9.75zM7.75 9a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM7 6.75A.75.75 0 017.75 6h.5a.75.75 0 010 1.5h-.5A.75.75 0 017 6.75zM7.75 3a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5z"/>
                             </svg>
-                            An error occured
+                            Bank Central Asia Tbk.
+                        </div>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M6 2a.75.75 0 01.696.471L10 10.731l1.304-3.26A.75.75 0 0112 7h3.25a.75.75 0 010 1.5h-2.742l-1.812 4.528a.75.75 0 01-1.392 0L6 4.77 4.696 8.03A.75.75 0 014 8.5H.75a.75.75 0 010-1.5h2.742l1.812-4.529A.75.75 0 016 2z"/>
+                            </svg>
+                            Valued at 7700.00 IDR
                         </div>
                     </section>
+                    <section>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"/>
+                            </svg>
+                            Today
+                        </div>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M13.03 8.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.47 9.28a.75.75 0 011.06-1.06l2.97 2.97V3.75a.75.75 0 011.5 0v7.44l2.97-2.97a.75.75 0 011.06 0z"/>
+                            </svg>
+                            -75.00 IDR (-0.97%)
+                        </div>
+                    </section>
+                </div>
+                <div class="stock-chart">
+                    <div class="ct-chart">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="480" height="160" class="ct-chart-line">
+                            <!-- (optimized css) -->
+                            <g class="ct-grids">
+                                <line y1="125" y2="125" x1="50" x2="465" class="ct-grid ct-vertical"/>
+                                <line y1="70" y2="70" x1="50" x2="465" class="ct-grid ct-vertical"/>
+                                <line y1="15" y2="15" x1="50" x2="465" class="ct-grid ct-vertical"/>
+                            </g>
+                            <g>
+                                <g class="ct-series ct-series-a">
+                                    <path d="M406.412,125L406.412,70C408.039,70,409.667,70,411.294,70C412.922,70,414.549,70,416.176,70L416.176,125Z" class="ct-area"/>
+                                    <path d="M318.529,125L318.529,42.5C320.157,42.5,321.784,42.5,323.412,42.5C325.039,42.5,326.667,42.5,328.294,42.5C329.922,42.5,331.549,70,333.176,70C334.804,70,336.431,42.5,338.059,42.5C339.686,42.5,341.314,42.5,342.941,42.5C344.569,42.5,346.196,70,347.824,70C349.451,70,351.078,42.5,352.706,42.5C354.333,42.5,355.961,42.5,357.588,42.5C359.216,42.5,360.843,42.5,362.471,42.5C364.098,42.5,365.725,42.5,367.353,42.5C368.98,42.5,370.608,42.5,372.235,42.5C373.863,42.5,375.49,42.5,377.118,42.5C378.745,42.5,380.373,15,382,15C383.627,15,385.255,42.5,386.882,42.5C388.51,42.5,390.137,15,391.765,15C393.392,15,395.02,33.333,396.647,42.5L396.647,125Z" class="ct-area"/>
+                                    <path d="M50,125L50,70C51.627,60.833,53.255,42.5,54.882,42.5C56.51,42.5,58.137,42.5,59.765,42.5C61.392,42.5,63.02,15,64.647,15C66.275,15,67.902,42.5,69.529,42.5C71.157,42.5,72.784,42.5,74.412,42.5C76.039,42.5,77.667,42.5,79.294,42.5C80.922,42.5,82.549,42.5,84.176,42.5C85.804,42.5,87.431,42.5,89.059,42.5C90.686,42.5,92.314,42.5,93.941,42.5C95.569,42.5,97.196,42.5,98.824,42.5C100.451,42.5,102.078,42.5,103.706,42.5C105.333,42.5,106.961,70,108.588,70C110.216,70,111.843,42.5,113.471,42.5C115.098,42.5,116.725,70,118.353,70C119.98,70,121.608,42.5,123.235,42.5C124.863,42.5,126.49,70,128.118,70C129.745,70,131.373,70,133,70C134.627,70,136.255,70,137.882,70C139.51,70,141.137,42.5,142.765,42.5C144.392,42.5,146.02,60.833,147.647,70C149.275,79.167,150.902,97.5,152.529,97.5C154.157,97.5,155.784,70,157.412,70C159.039,70,160.667,70,162.294,70C163.922,70,165.549,125,167.176,125C168.804,125,170.431,106.667,172.059,97.5C173.686,88.333,175.314,70,176.941,70C178.569,70,180.196,97.5,181.824,97.5C183.451,97.5,185.078,97.5,186.706,97.5C188.333,97.5,189.961,97.5,191.588,97.5C193.216,97.5,194.843,97.5,196.471,97.5C198.098,97.5,199.725,97.5,201.353,97.5L201.353,125Z" class="ct-area"/>
+                                    <path d="M50,70C51.627,60.833,53.255,42.5,54.882,42.5C56.51,42.5,58.137,42.5,59.765,42.5C61.392,42.5,63.02,15,64.647,15C66.275,15,67.902,42.5,69.529,42.5C71.157,42.5,72.784,42.5,74.412,42.5C76.039,42.5,77.667,42.5,79.294,42.5C80.922,42.5,82.549,42.5,84.176,42.5C85.804,42.5,87.431,42.5,89.059,42.5C90.686,42.5,92.314,42.5,93.941,42.5C95.569,42.5,97.196,42.5,98.824,42.5C100.451,42.5,102.078,42.5,103.706,42.5C105.333,42.5,106.961,70,108.588,70C110.216,70,111.843,42.5,113.471,42.5C115.098,42.5,116.725,70,118.353,70C119.98,70,121.608,42.5,123.235,42.5C124.863,42.5,126.49,70,128.118,70C129.745,70,131.373,70,133,70C134.627,70,136.255,70,137.882,70C139.51,70,141.137,42.5,142.765,42.5C144.392,42.5,146.02,60.833,147.647,70C149.275,79.167,150.902,97.5,152.529,97.5C154.157,97.5,155.784,70,157.412,70C159.039,70,160.667,70,162.294,70C163.922,70,165.549,125,167.176,125C168.804,125,170.431,106.667,172.059,97.5C173.686,88.333,175.314,70,176.941,70C178.569,70,180.196,97.5,181.824,97.5C183.451,97.5,185.078,97.5,186.706,97.5C188.333,97.5,189.961,97.5,191.588,97.5C193.216,97.5,194.843,97.5,196.471,97.5C198.098,97.5,199.725,97.5,201.353,97.5M318.529,42.5C320.157,42.5,321.784,42.5,323.412,42.5C325.039,42.5,326.667,42.5,328.294,42.5C329.922,42.5,331.549,70,333.176,70C334.804,70,336.431,42.5,338.059,42.5C339.686,42.5,341.314,42.5,342.941,42.5C344.569,42.5,346.196,70,347.824,70C349.451,70,351.078,42.5,352.706,42.5C354.333,42.5,355.961,42.5,357.588,42.5C359.216,42.5,360.843,42.5,362.471,42.5C364.098,42.5,365.725,42.5,367.353,42.5C368.98,42.5,370.608,42.5,372.235,42.5C373.863,42.5,375.49,42.5,377.118,42.5C378.745,42.5,380.373,15,382,15C383.627,15,385.255,42.5,386.882,42.5C388.51,42.5,390.137,15,391.765,15C393.392,15,395.02,33.333,396.647,42.5M406.412,70C408.039,70,409.667,70,411.294,70C412.922,70,414.549,70,416.176,70" class="ct-line"/>
+                                </g>
+                            </g>
+                            <g class="ct-labels">
+                                <text x="50" y="145" width="4.882352941176471" height="20" class="ct-label ct-horizontal ct-end">26/01, 01:55</text>
+                                <text x="152.52941176470588" y="145" width="4.882352941176478" height="20" class="ct-label ct-horizontal ct-end">26/01, 03:40</text>
+                                <text x="255.05882352941177" y="145" width="4.882352941176492" height="20" class="ct-label ct-horizontal ct-end">26/01, 05:25</text>
+                                <text x="357.5882352941177" y="145" width="4.882352941176464" height="20" class="ct-label ct-horizontal ct-end">26/01, 07:10</text>
+                                <text x="460.11764705882354" y="145" width="30" height="20" class="ct-label ct-horizontal ct-end">26/01, 08:55</text>
+                                <text y="125" x="40" height="55" width="30" class="ct-label ct-vertical ct-start">7650</text>
+                                <text y="70" x="40" height="55" width="30" class="ct-label ct-vertical ct-start">7700</text>
+                                <text y="15" x="40" height="30" width="30" class="ct-label ct-vertical ct-start">7750</text>
+                            </g>
+                        </svg>
+                        <div class="ct-legend">
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
