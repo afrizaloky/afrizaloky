@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="294" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="277" class="">
     <defs>
         <style/>
     </defs>
-    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-fade{0%{opacity:0}to{opacity:1}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h2{margin:8px 0 2px;padding:0;font-weight:400;font-size:16px}h2 svg{fill:currentColor}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}#metrics-end,.fill-width{width:100%}.tweet{font-size:13px;margin-top:6px;margin-bottom:16px;margin-left:18px;border-left:3px solid#777777b2;padding-left:6px}.tweet .link,.tweet .mention,h2{color:#0366d6}.tweet .date{margin:6px 0;font-size:12px;color:#666}code,span.code{background-color:#7777771f;padding:1px 5px;font-size:80%;border-radius:6px;color:#777;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}code{display:inline-block}span.code{margin:0 4px -3px}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
+    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-fade{0%{opacity:0}to{opacity:1}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h2{margin:8px 0 2px;padding:0;font-weight:400;font-size:16px}h2 svg{fill:currentColor}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}#metrics-end,.fill-width{width:100%}.tweet{font-size:13px;margin-top:6px;margin-bottom:16px;margin-left:18px;border-left:3px solid#777777b2;padding-left:6px}.tweet .hashtag,.tweet .link,.tweet .mention,h2{color:#0366d6}.tweet .date{margin:6px 0;font-size:12px;color:#666}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
     <style/>
     <foreignObject x="0" y="0" width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
@@ -22,23 +22,32 @@
                             MetaAI
                         </div>
                         <div class="tweet">
-                            PyTorch is five years old this week! How did it get to where it is today? Here's
-                            <span class="mention">@schrep</span>
+                            Learn more about our researchers
+                            <span class="mention">@mhnt1580</span>
                             ,
-                            <span class="mention">@ylecun</span>
-                            ,
-                            <span class="mention">@soumithchintala</span>
-                            and Lin Qiao on PyTorch's origins, and what comes next:
-                            <a href="https://t.co/s5OGfZOlt9" class="link">youtube.com/watch?v=r7qB7m…</a>
-                            <div class="date">19:00:44 on 20 Jan 2022</div>
+                            <span class="mention">@ZloiAlexei</span>
+                            , and
+                            <span class="mention">@MichaelAuli</span>
+                            , wav2vec, and their positive
+                            <span class="hashtag">#Impact</span>
+                            at
+                            <a href="https://t.co/UIdTZkPu92" class="link">ow.ly/FF6n50HyqET</a>
+                            .
+                            <a href="https://t.co/7uyhAGPvSx" class="link">pic.twitter.com/7uyhAGPvSx</a>
+                            <div class="date">17:00:48 on 26 Jan 2022</div>
                         </div>
                         <div class="tweet">
-                            We created data2vec, the first general high-performance self-supervised algorithm for speech, vision, and text. When applied to different modalities, it matches or outperforms the best self-supervised algorithms. Read more and get the code:
-                            <br />
-                            <br />
-                            <a href="https://t.co/3x8VCwGI2x" class="link">ai.facebook.com/blog/the-first…</a>
-                            <a href="https://t.co/Q9TNDg1paj" class="link">pic.twitter.com/Q9TNDg1paj</a>
-                            <div class="date">17:05:50 on 20 Jan 2022</div>
+                            With over 7,000 world languages,
+                            <span class="hashtag">#SpeechRecognition</span>
+                            works well for only a small fraction. Wav2vec and
+                            <span class="hashtag">#AI</span>
+                            are changing that. Self-supervision and less reliance on labeled data can make speech tech more accessible and a key to the
+                            <span class="hashtag">#metaverse</span>
+                            . Learn how at
+                            <a href="https://t.co/7JhdLwSYuj" class="link">ow.ly/vhq650HyqCV</a>
+                            .
+                            <a href="https://t.co/PBqMOP4eMN" class="link">pic.twitter.com/PBqMOP4eMN</a>
+                            <div class="date">17:00:17 on 25 Jan 2022</div>
                         </div>
                     </section>
                 </div>
