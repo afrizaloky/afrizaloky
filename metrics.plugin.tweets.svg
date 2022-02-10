@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="277" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="260" class="">
     <defs>
         <style/>
     </defs>
-    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-fade{0%{opacity:0}to{opacity:1}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h2{margin:8px 0 2px;padding:0;font-weight:400;font-size:16px}h2 svg{fill:currentColor}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}#metrics-end,.fill-width{width:100%}.stargazers .chartist .ct-post{fill:rgba(127,127,127,.8)!important;color:rgba(127,127,127,.8)!important;font-size:9px;text-anchor:middle}.tweet{font-size:13px;margin-top:6px;margin-bottom:16px;margin-left:18px;border-left:3px solid#777777b2;padding-left:6px}.tweet .hashtag,.tweet .link,.tweet .mention,h2{color:#0366d6}.tweet .date{margin:6px 0;font-size:12px;color:#666}.people{padding:0 10px}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
+    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-fade{0%{opacity:0}to{opacity:1}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h2{margin:8px 0 2px;padding:0;font-weight:400;font-size:16px}h2 svg{fill:currentColor}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}#metrics-end,.fill-width{width:100%}.stargazers .chartist .ct-post{fill:rgba(127,127,127,.8)!important;color:rgba(127,127,127,.8)!important;font-size:9px;text-anchor:middle}.tweet{font-size:13px;margin-top:6px;margin-bottom:16px;margin-left:18px;border-left:3px solid #777777b2;padding-left:6px}.tweet .hashtag,.tweet .link,.tweet .mention,h2{color:#0366d6}.tweet .date{margin:6px 0;font-size:12px;color:#666}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
     <style/>
     <foreignObject x="0" y="0" width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
@@ -22,24 +22,22 @@
                             MetaAI
                         </div>
                         <div class="tweet">
-                            Learn more about our researcher
-                            <span class="mention">@abhshkdz</span>
-                            <span class="mention">@OpenCatalyst</span>
-                            and their positive
-                            <span class="hashtag">#Impact</span>
-                            at
-                            <a href="https://t.co/stKWquhvU9" class="link">ow.ly/bq3S50Hyrlu</a>
-                            .
-                            <a href="https://t.co/hiWvUeKTp2" class="link">pic.twitter.com/hiWvUeKTp2</a>
-                            <div class="date">17:01:21 on 2 Feb 2022</div>
+                            How we connect, create, and share will change as we bridge the gap between the physical and digital worlds. Sign up for Inside the Lab event to hear from
+                            <span class="mention">@an_open_mind</span>
+                            and Joelle Pineau as they discuss self-supervised learning and pushing creative limits.
+                            <a href="https://t.co/RRuybHuvhL" class="link">ow.ly/sBkC50HPycI</a>
+                            <a href="https://t.co/2HFMD3KCIF" class="link">pic.twitter.com/2HFMD3KCIF</a>
+                            <div class="date">17:00:25 on 9 Feb 2022</div>
                         </div>
                         <div class="tweet">
-                            Fairness is an important concern for speech recognition systems, just as for other AI applications. So we’ve created and released a unique new resource for measuring how well these systems work for different groups of people. Learn more:
-                            <br />
-                            <br />
-                            <a href="https://t.co/zpyTbAjsZm" class="link">ai.facebook.com/blog/a-new-res…</a>
-                            <a href="https://t.co/DpAot7KZqZ" class="link">pic.twitter.com/DpAot7KZqZ</a>
-                            <div class="date">17:50:59 on 1 Feb 2022</div>
+                            Join us February 23rd for Inside the Lab: Building for the metaverse with
+                            <span class="hashtag">#AI</span>
+                            . Tune in to our livestream as Mark Zuckerberg discusses
+                            <span class="hashtag">#AI</span>
+                            's role in the metaverse. Learn more:
+                            <a href="https://t.co/RRuybHuvhL" class="link">ow.ly/sBkC50HPycI</a>
+                            <a href="https://t.co/xqrA5CzkNu" class="link">pic.twitter.com/xqrA5CzkNu</a>
+                            <div class="date">17:00:54 on 8 Feb 2022</div>
                         </div>
                     </section>
                 </div>
