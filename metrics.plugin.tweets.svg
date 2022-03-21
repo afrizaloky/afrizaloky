@@ -2,7 +2,7 @@
     <defs>
         <style/>
     </defs>
-    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-fade{0%{opacity:0}to{opacity:1}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h2{margin:8px 0 2px;padding:0;font-weight:400;font-size:16px}h2 svg{fill:currentColor}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}#metrics-end,.fill-width{width:100%}.stargazers .chartist .ct-post{fill:rgba(127,127,127,.8)!important;color:rgba(127,127,127,.8)!important;font-size:9px;text-anchor:middle}.tweet{font-size:13px;margin-top:6px;margin-bottom:16px;margin-left:18px;border-left:3px solid #777777b2;padding-left:6px}.tweet .hashtag,.tweet .link,h2{color:#0366d6}.tweet .date{margin:6px 0;font-size:12px;color:#666}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
+    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-fade{0%{opacity:0}to{opacity:1}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h2{margin:8px 0 2px;padding:0;font-weight:400;font-size:16px}h2 svg{fill:currentColor}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}#metrics-end,.fill-width{width:100%}.stargazers .chartist .ct-post{fill:rgba(127,127,127,.8)!important;color:rgba(127,127,127,.8)!important;font-size:9px;text-anchor:middle}.categories{display:flex;align-items:center;justify-content:space-around;margin-top:4px}.tweet{font-size:13px;margin-top:6px;margin-bottom:16px;margin-left:18px;border-left:3px solid #777777b2;padding-left:6px}.tweet .link,h2{color:#0366d6}.tweet .date{margin:6px 0;font-size:12px;color:#666}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
     <style/>
     <foreignObject x="0" y="0" width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
@@ -22,21 +22,15 @@
                             MetaAI
                         </div>
                         <div class="tweet">
-                            Researchers at Meta AI are advancing the future of personalized
-                            <span class="hashtag">#AI</span>
-                            assistants. Alborz Geramifard spoke at Inside the Lab about how Meta AI is paving the way towards smarter devices powered by artificial intelligence. Watch the full talk on our website:
-                            <br />
-                            <a href="https://t.co/r6vjXqk2pf" class="link">ai.facebook.com/events/inside-…</a>
-                            <a href="https://t.co/V5nIj4RfsE" class="link">pic.twitter.com/V5nIj4RfsE</a>
-                            <div class="date">19:41:07 on 16 Mar 2022</div>
+                            To kick off the first of a 3-part RAISE spotlight series, we sat down for a Q&amp;A with software engineers Kun Huang &amp; Alejandro Perez Munoz. Read about what drew them to the field, and why they chose the RAISE program to kickstart their AI career here:
+                            <a href="https://t.co/B3VaST7hCC" class="link">ai.facebook.com/blog/qa-with-a…</a>
+                            <a href="https://t.co/1nDnmn8GZE" class="link">pic.twitter.com/1nDnmn8GZE</a>
+                            <div class="date">16:08:12 on 18 Mar 2022</div>
                         </div>
                         <div class="tweet">
-                            Understanding how and why
-                            <span class="hashtag">#AI</span>
-                            works can be difficult for everyday users and others, but Meta AI is aiming to change that. We recently shared a prototype AI system card tool and explained more about it on our blog:
-                            <a href="https://t.co/Hpl5YxQqpc" class="link">ai.facebook.com/blog/system-ca…</a>
-                            <a href="https://t.co/uwDjsJWh6Y" class="link">pic.twitter.com/uwDjsJWh6Y</a>
-                            <div class="date">15:58:45 on 16 Mar 2022</div>
+                            EgoObjects is the largest object-centric data set, which contains more than 110 hours of egocentric videos and focuses on object detection tasks. It includes 40,000 videos, and 1.2M object annotations from up to 600 object categories. Learn more:
+                            <a href="https://t.co/YqcrVZFb3U" class="link">ai.facebook.com/blog/advancing…</a>
+                            <div class="date">00:06:20 on 18 Mar 2022</div>
                         </div>
                     </section>
                 </div>
