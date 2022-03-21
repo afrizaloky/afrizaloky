@@ -23,7 +23,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">enclaive/enclaive-docker-nginx-sgx</span>
+                                        <span class="repo">ethereum/go-ethereum</span>
                                     </div>
                                 </div>
                             </section>
@@ -36,7 +36,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">ayeks/TresorSGX</span>
+                                        <span class="repo">thezdi/PoC</span>
                                     </div>
                                 </div>
                             </section>
@@ -49,7 +49,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">google/channel-id-enclave</span>
+                                        <span class="repo">tregua87/sgx-forensic</span>
                                     </div>
                                 </div>
                             </section>
@@ -62,7 +62,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">ndokmai/sgx-genome-variants-search</span>
+                                        <span class="repo">fortanix/sgxtop</span>
                                     </div>
                                 </div>
                             </section>
@@ -75,7 +75,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">iisc-cssl/porpoise</span>
+                                        <span class="repo">Penglai-Enclave/Penglai-Enclave</span>
                                     </div>
                                 </div>
                             </section>
@@ -88,7 +88,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">inclavare-containers/inclavare-containers</span>
+                                        <span class="repo">sebva/sgx-orchestrator</span>
                                     </div>
                                 </div>
                             </section>
@@ -101,7 +101,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">edgelesssys/edgelessrt</span>
+                                        <span class="repo">ibr-ds/sgx-perf</span>
                                     </div>
                                 </div>
                             </section>
