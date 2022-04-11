@@ -22,18 +22,19 @@
                             MetaAI
                         </div>
                         <div class="tweet">
-                            Meta AI researchers are announcing iSDF; real-time neural signed distance fields for robot navigation and manipulation. iSDF can fill in partially observed regions and adaptively allocate memory capacity to map at different levels of detail.
-                            <span class="hashtag">#AI</span>
-                            <a href="https://t.co/gTT5NytjFP" class="link">joeaortiz.github.io/iSDF/</a>
-                            <a href="https://t.co/WwRM7c9wOe" class="link">pic.twitter.com/WwRM7c9wOe</a>
-                            <div class="date">16:51:01 on 6 Apr 2022</div>
+                            Meta AI continues to advance self-supervised learning for images. Today, we are sharing a demo to explore what can be done with these models. So read about it:
+                            <a href="https://t.co/cMLPX05X6s" class="link">ai.facebook.com/blog/dino-self…</a>
+                            And try it:
+                            <a href="https://t.co/LxMmuMlvGW" class="link">ssl-demos.metademolab.com/home</a>
+                            <div class="date">16:05:28 on 8 Apr 2022</div>
                         </div>
                         <div class="tweet">
-                            During Inside the Lab, an  event highlighting Meta AI’s role in building for the metaverse, Meta announced  the AI Learning Alliance, an initiative to bring diverse talent into the field of
+                            We are open-sourcing an
                             <span class="hashtag">#AI</span>
-                            . Learn more:
-                            <a href="https://t.co/zGcsgj0EKS" class="link">ai.facebook.com/blog/ai-learni…</a>
-                            <div class="date">18:02:44 on 5 Apr 2022</div>
+                            model and dataset to help build on existing efforts to bring more representation of women and marginalized groups to Wikipedia. Learn more:
+                            <a href="https://t.co/eToY6J9Qae" class="link">ai.facebook.com/research/impac…</a>
+                            <a href="https://t.co/yRGZ7quCoR" class="link">pic.twitter.com/yRGZ7quCoR</a>
+                            <div class="date">16:08:20 on 7 Apr 2022</div>
                         </div>
                     </section>
                 </div>
