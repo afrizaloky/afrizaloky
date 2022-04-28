@@ -23,7 +23,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">sharksforarms/deku</span>
+                                        <span class="repo">OP-TEE/optee_os</span>
                                     </div>
                                 </div>
                             </section>
@@ -36,7 +36,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">STMicroelectronics/STM32CubeG0</span>
+                                        <span class="repo">OP-TEE/optee_client</span>
                                     </div>
                                 </div>
                             </section>
@@ -49,7 +49,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">wolfSSL/wolfssl</span>
+                                        <span class="repo">intel/trusted-certificate-issuer</span>
                                     </div>
                                 </div>
                             </section>
@@ -62,7 +62,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">NASA-SW-VnV/ikos</span>
+                                        <span class="repo">golang-migrate/migrate</span>
                                     </div>
                                 </div>
                             </section>
@@ -75,7 +75,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">yandex/gixy</span>
+                                        <span class="repo">ceph/ceph</span>
                                     </div>
                                 </div>
                             </section>
@@ -88,7 +88,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">facebook/infer</span>
+                                        <span class="repo">microsoft/language-server-protocol</span>
                                     </div>
                                 </div>
                             </section>
@@ -101,7 +101,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">warpdotdev/Warp</span>
+                                        <span class="repo">keystone-enclave/sm</span>
                                     </div>
                                 </div>
                             </section>
