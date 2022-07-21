@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="227" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="294" class="">
     <defs>
         <style/>
     </defs>
@@ -22,19 +22,28 @@
                             MetaAI
                         </div>
                         <div class="tweet">
-                            Don’t miss us at
-                            <span class="mention">@icmlconf</span>
-                            2022 - stop by booth 611 and see our demos: Stories Told Through Translation, Animated Drawings and Self-Supervised Learning..
-                            <span class="hashtag">#ICML</span>
-                            <a href="https://t.co/mleKrQUvuc" class="link">bit.ly/3PfsAuw</a>
-                            <a href="https://t.co/AKzE4wZQui" class="link">pic.twitter.com/AKzE4wZQui</a>
-                            <div class="date">13:00:02 on 17 Jul 2022</div>
+                            Thanks
+                            <span class="mention">@HuggingFace</span>
+                            , we’re glad to have you as a partner on
+                            <span class="hashtag">#NLLB</span>
+                            ! Our translation models are now made available through the
+                            <span class="mention">@HuggingFace</span>
+                            Hub 🤗
+                            <br />
+                            <br />
+                            Try it out here:
+                            <a href="https://t.co/QV5ATXaJt2" class="link">huggingface.co/facebook/nllb-…</a>
+                            <br />
+                            Documentation here:
+                            <a href="https://t.co/MzQDpPbSqT" class="link">research.facebook.com/publications/n…</a>
+                            <a href="https://t.co/GQjm0qiHDq" class="link">twitter.com/huggingface/st…</a>
+                            <div class="date">21:38:00 on 20 Jul 2022</div>
                         </div>
                         <div class="tweet">
-                            Learn more about the additional control that Make-A-Scene offers and see more of Scott's creations:
-                            <a href="https://t.co/jcQMLOpShI" class="link">bit.ly/3PnPNuc</a>
-                            <a href="https://t.co/lALD81bW07" class="link">pic.twitter.com/lALD81bW07</a>
-                            <div class="date">20:30:57 on 15 Jul 2022</div>
+                            <span class="mention">@ChuckBaggett</span>
+                            <span class="mention">@refikanadol</span>
+                            Make-A-Scene isn't available to the public yet, but you can send us your text prompt and a photo of a rough sketch, and we'll run it and share as many generations as we can!
+                            <div class="date">20:32:15 on 20 Jul 2022</div>
                         </div>
                     </section>
                 </div>
