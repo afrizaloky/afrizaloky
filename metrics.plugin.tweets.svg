@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="228" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="310" class="">
     <defs>
         <style/>
     </defs>
@@ -22,18 +22,26 @@
                             MetaAI
                         </div>
                         <div class="tweet">
-                            We ❤️ accuracy in translation 🔎. Ever been in a situation like this, where a good translation really matters? Our
                             <span class="hashtag">#NLLB</span>
-                            model can deliver high-quality translations directly between 200+ languages - including 150 low-resource languages. Learn more:
-                            <a href="https://t.co/0523eezd9m" class="link">bit.ly/3zHWLW4</a>
-                            <a href="https://t.co/vuOkZ9ueMG" class="link">pic.twitter.com/vuOkZ9ueMG</a>
-                            <div class="date">16:46:22 on 29 Jul 2022</div>
+                            was developed to help make knowledge transfer possible online. One application we're especially excited about is how it makes literature and stories more accessible.
+                            <br />
+                            <br />
+                            See why
+                            <span class="mention">@booksterpp</span>
+                            is particularly interested in how it can be used to translate children’s stories.
+                            <a href="https://t.co/pPu9UFgCuU" class="link">twitter.com/booksterpp/sta…</a>
+                            <div class="date">23:08:23 on 3 Aug 2022</div>
                         </div>
                         <div class="tweet">
-                            <span class="mention">@Xqsebx</span>
-                            <span class="mention">@deviparikh</span>
-                            🛸 We'll *transmit* this to our team. Thanks for sharing!
-                            <div class="date">00:20:35 on 29 Jul 2022</div>
+                            Have you been wondering about
+                            <span class="hashtag">#PyTorch</span>
+                            in Production? Do you want to learn more?
+                            <span class="mention">@PyTorch</span>
+                            is hosting a
+                            <span class="mention">@TwitterSpaces</span>
+                            AMA tomorrow August 4th at 1pm PT / 4pm ET. Set a reminder and join PyTorch Engineers for the discussion.
+                            <a href="https://t.co/nc13X459bs" class="link">twitter.com/PyTorch/status…</a>
+                            <div class="date">18:34:45 on 3 Aug 2022</div>
                         </div>
                     </section>
                 </div>
