@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="260" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="310" class="">
     <defs>
         <style/>
     </defs>
@@ -22,18 +22,27 @@
                             MetaAI
                         </div>
                         <div class="tweet">
-                            See
+                            Researchers from
+                            <span class="mention">@allen_ai</span>
+                            just reproduced &amp; released the mined bitext training data used for
                             <span class="hashtag">#NLLB</span>
-                            in action, and access a demo with translated children's stories in their origin language here:
-                            <a href="https://t.co/UpjF5YSE9t" class="link">bit.ly/3T2UegX</a>
-                            <div class="date">20:13:36 on 18 Aug 2022</div>
+                            🎉
+                            <br />
+                            <br />
+                            This newly released data was the missing piece in being able to fully recreate the dataset used to train NLLB-200, and AI researchers now have easy access to the full dataset.
+                            <a href="https://t.co/leJqo5V8Te" class="link">twitter.com/allen_ai/statu…</a>
+                            <div class="date">22:48:23 on 24 Aug 2022</div>
                         </div>
                         <div class="tweet">
-                            Through No Language Left Behind, we’re able to use AI advancements to learn &amp; translate hundreds of languages, many of which are scarce online.
-                            <span class="mention">@booksterpp</span>
-                            shares its role in literature as languages ​​w/ almost no access to the virtual world can now be used by a large audience.
-                            <a href="https://t.co/K0dP88IDuq" class="link">twitter.com/booksterpp/sta…</a>
-                            <div class="date">20:13:35 on 18 Aug 2022</div>
+                            RT
+                            <span class="mention">@alexrives</span>
+                            : We've released the ESM2 protein language models up to 15B parameters today.
+                            <br />
+                            <br />
+                            Available now at the FAIR/
+                            <span class="mention">@MetaAI</span>
+                            Protein Team…
+                            <div class="date">17:16:39 on 22 Aug 2022</div>
                         </div>
                     </section>
                 </div>
