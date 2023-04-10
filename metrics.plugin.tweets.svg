@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="345" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="312" class="">
     <defs>
         <style/>
     </defs>
@@ -22,21 +22,18 @@
                             MetaAI
                         </div>
                         <div class="tweet">
+                            Last week We announced two major advancements in our work toward general-purpose embodied AI agents. We're excited for how this work will help build toward a future where AI agents can assist humans in both the virtual &amp; physical world. More details ➡️
+                            <a href="https://t.co/V2hm0yDor9" class="link">bit.ly/40pJU5M</a>
+                            <a href="https://t.co/EcFg0PNRPx" class="link">pic.twitter.com/EcFg0PNRPx</a>
+                            <div class="date">16:30:00 on 6 Apr 2023</div>
+                        </div>
+                        <div class="tweet">
                             In addition to the new model, we’re also releasing the SA-1B dataset, which is 400x larger than any existing segmentation dataset — we hope this work will help accelerate computer vision research and enable entirely new applications.
                             <br />
                             Get the dataset ⬇️
                             <br />
                             <a href="https://t.co/vizP1Oaqu2" class="link">github.com/facebookresear…</a>
                             <div class="date">13:13:22 on 5 Apr 2023</div>
-                        </div>
-                        <div class="tweet">
-                            Today we're releasing the Segment Anything Model (SAM) — a step toward the first foundation model for image segmentation.
-                            <br />
-                            <br />
-                            SAM is capable of one-click segmentation of any object from any photo or video + zero-shot transfer to other segmentation tasks ➡️
-                            <a href="https://t.co/qYUoePrWVi" class="link">bit.ly/433YuBI</a>
-                            <a href="https://t.co/zX4Rxb5Yfo" class="link">pic.twitter.com/zX4Rxb5Yfo</a>
-                            <div class="date">13:01:43 on 5 Apr 2023</div>
                         </div>
                     </section>
                 </div>
