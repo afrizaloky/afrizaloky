@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="205" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="312" class="">
     <defs>
         <style/>
     </defs>
@@ -22,16 +22,20 @@
                             MetaAI
                         </div>
                         <div class="tweet">
-                            We recently completed the second-phase buildout of our Research SuperCluster, making it one of the fastest AI supercomputers in the world.
+                            Meta Lattice is a new model architecture that improves Meta’s ads systems performance, AI efficiency and enables faster adaptability to the shifting market landscape.
                             <br />
                             <br />
-                            📺 Kalyan Saladi shared a look at the scale of RSC by the numbers.
+                            More on this new work ⬇️
+                            <div class="date">17:18:25 on 2 Jun 2023</div>
+                        </div>
+                        <div class="tweet">
+                            Meta Scalable Video Processor is our first in-house designed ASIC for video processing. Alex Mastro &amp; Junqiang Lan share more on how it's supporting some of the unique needs we face at Meta's scale.
                             <br />
                             <br />
-                            More details ➡️
-                            <a href="https://t.co/i1W6ld96Eb" class="link">bit.ly/3N2qHCR</a>
-                            <a href="https://t.co/FJaZbKvqKq" class="link">pic.twitter.com/FJaZbKvqKq</a>
-                            <div class="date">17:41:02 on 30 May 2023</div>
+                            More on this work ➡️
+                            <a href="https://t.co/lyCNz5V7ww" class="link">bit.ly/3oIvIr1</a>
+                            <a href="https://t.co/gNd5g9Xdig" class="link">pic.twitter.com/gNd5g9Xdig</a>
+                            <div class="date">16:00:01 on 1 Jun 2023</div>
                         </div>
                     </section>
                 </div>
