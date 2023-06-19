@@ -23,7 +23,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">janelia-arduino/Vector</span>
+                                        <span class="repo">mono/CppSharp</span>
                                     </div>
                                 </div>
                             </section>
@@ -36,7 +36,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">Pkcs11Interop/pkcs11-mock</span>
+                                        <span class="repo">salrashid123/go_pkcs11</span>
                                     </div>
                                 </div>
                             </section>
@@ -49,7 +49,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">backstage/backstage</span>
+                                        <span class="repo">mode51software/pkcs11helper</span>
                                     </div>
                                 </div>
                             </section>
@@ -62,7 +62,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">keycloak/keycloak</span>
+                                        <span class="repo">wayf-dk/goeleven</span>
                                     </div>
                                 </div>
                             </section>
@@ -75,7 +75,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">argoproj/argo-cd</span>
+                                        <span class="repo">Nitrokey/nethsm-pkcs11</span>
                                     </div>
                                 </div>
                             </section>
@@ -88,7 +88,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">spiffe/spire</span>
+                                        <span class="repo">ghostunnel/ghostunnel</span>
                                     </div>
                                 </div>
                             </section>
@@ -101,7 +101,7 @@
                                     </svg>
                                     <div class="content">
                                         Starred
-                                        <span class="repo">grpc/grpc</span>
+                                        <span class="repo">SSLMate/go-pkcs12</span>
                                     </div>
                                 </div>
                             </section>
